@@ -17,20 +17,12 @@ All-atom molecular dynamics simulation of the psilocin-bound 5-HT2A serotonin re
 
 ```
 amarolab/
-  sims/                     # Upstream structure preparation
-    9AS8.pdb                  # Original PDB deposit
-    9AS8_fixed.pdb            # PDBFixer output (4 chains, gaps modeled)
-    9AS8_complex.pdb          # Protein + psilocin merged for CHARMM-GUI
-    psilocin.pdb              # Ligand binding-pose coordinates
-    psilocin_cgenff.pdb       # Ligand with CGenFF atom names, superposed
-    charmm-gui-run-1/         # CGenFF ligand parameterization (correct run)
-    *.py                      # Structure prep scripts
-
   charmm-gui/               # CHARMM-GUI Membrane Builder output (Job 8190629385)
     step1_pdbreader.*         # PDB reading, protonation, disulfide, capping
     step2_orient.*            # PPM orientation (flipped: G protein below)
     step3_*                   # Lipid composition, packing, system sizing
     step4*                    # Lipid building, waterbox, ions
+    step5_assembly.*          # Final assembled system
     input.config.dat          # Full CHARMM-GUI configuration record
     lig/                      # CGenFF topology and parameters for psilocin
     amber/                    # Amber input files (alternative engine)
@@ -43,10 +35,8 @@ amarolab/
     sysinfo.dat               # Box dimensions
     openmm_run.py             # Main run script (modified: Metal/HIP priority)
     omm_*.py                  # OpenMM support modules
-    step6.*_equilibration.inp # Equilibration parameters (6-step restraint release)
-    step7_production.inp      # Production run parameters
-    step6.*_equilibration.out # Equilibration logs (convergence data)
-    step7_*.out               # Production logs
+    step6.*_equilibration.*   # Equilibration inputs, logs, DCDs, restarts
+    step7_*                   # Production inputs, logs, DCDs, restarts
     run_production.sh         # Production run wrapper
     expanse_production.sb     # SDSC Expanse SLURM batch script
     restraints/               # Restraint definitions
@@ -66,8 +56,10 @@ amarolab/
     biochemcore_env.yml       # Local environment (macOS/M4)
     biochemcore_expanse.yml   # HPC environment (SDSC Expanse)
 
-  amaro_scripts/            # Amaro Lab shared script library
-  amaro_wiki/               # Amaro Lab internal wiki (Obsidian export)
+  amaro/                    # Amaro Lab reference materials
+    amaro_scripts/            # Shared script library
+    amaro_wiki/               # Internal wiki (Obsidian export)
+    biochemcore-syllabus.md   # BioChemCore program syllabus
 ```
 
 ## Key parameters and decisions
