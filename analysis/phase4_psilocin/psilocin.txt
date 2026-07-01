@@ -1,0 +1,54 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Selections OK: psilocin N1, D77 OD1, D77 OD2 (1 atom each)
+
+Salt bridge (N1 — D77 min distance):
+  Range:  2.61 - 3.23 A
+  Mean:   2.86 +/- 0.12 A
+  Median: 2.85 A
+  Intact   (<3.5 A): 100/100 (100%)
+  Weakened (3.5-4.5):   0/100 (0%)
+  Marginal (4.5-6.0):   0/100 (0%)
+  Broken   (>6.0 A):   0/100 (0%)
+
+Binding pocket: 25 residues, 100 backbone atoms
+Ligand heavy atoms: 15
+
+Pocket residues:
+  PROA LEU  45  (lit LEU123)
+  PROA VAL  49  (lit VAL127)
+  PROA ILE  74  (lit ILE152)
+  PROA ASP  77  (lit ASP155)
+  PROA VAL  78  (lit VAL156)
+  PROA SER  81  (lit SER159)
+  PROA THR  82  (lit THR160)
+  PROA ILE  85  (lit ILE163)
+  PROB ILE 128  (lit ILE206)
+  PROB LEU 151  (lit LEU229)
+  PROB PHE 156  (lit PHE234)
+  PROB VAL 157  (lit VAL235)
+  PROB LEU 158  (lit LEU236)
+  PROB GLY 160  (lit GLY238)
+  PROB SER 161  (lit SER239)
+  PROB SER 164  (lit SER242)
+  PROB PHE 165  (lit PHE243)
+  PROC TRP 209  (lit TRP336)
+  PROC PHE 212  (lit PHE339)
+  PROC PHE 213  (lit PHE340)
+  PROC ASN 216  (lit ASN343)
+  PROC ILE 217  (lit ILE344)
+  PROC VAL 239  (lit VAL366)
+  PROC GLY 242  (lit GLY369)
+  PROC TYR 243  (lit TYR370)
+
+Ligand RMSD (heavy atoms, pocket-aligned):
+  Range:  0.00 - 1.33 A
+  Mean:   0.77 +/- 0.20 A
+  Median: 0.79 A
+
+Pocket backbone RMSD:
+  Range:  0.00 - 1.00 A
+  Mean:   0.67 +/- 0.12 A
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase4_psilocin/psilocin_data.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase4_psilocin/binding_pose.png

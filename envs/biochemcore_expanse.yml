@@ -1,0 +1,13 @@
+name: biochemcore
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - openmm>=8.1
+  - cuda-version>=11.8
+  - pdbfixer>=1.9
+  - numpy>=1.26
+  - scipy>=1.17
+  - pip
+  - setuptools
+  - wheel

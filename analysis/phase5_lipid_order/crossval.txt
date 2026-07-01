@@ -1,0 +1,18 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+POPC sn-1: shape (48, 100), range [-0.317, 0.559]
+POPC sn-2: shape (48, 100), range [-0.148, 0.479]
+
+Chain     |S_CD| mean    S_CC mean     |S_CC|/2    Ratio
+--------------------------------------------------------
+sn-1           0.2406       0.2698       0.1349     0.56
+sn-2           0.1822       0.2265       0.1132     0.62
+
+Expected: |S_CC|/2 ≈ |S_CD| for saturated chains (ratio ≈ 1.0)
+The relationship breaks at double bonds, so sn-2 may differ more.
+
+Ordering check (saturated > unsaturated):
+  S_CD: sn-1 (0.241) > sn-2 (0.182): PASS
+  S_CC: sn-1 (0.270) > sn-2 (0.226): PASS
+
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_crossval_POPC.png

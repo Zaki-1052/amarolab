@@ -1,0 +1,59 @@
+=================================================================
+CRAC/CARC cholesterol recognition motif scan
+=================================================================
+Scanned 266 receptor residues in 2 contiguous blocks
+  Block 1: PROA+PROB resids 1-185 (lit 79-263)
+  Block 2: PROC resids 186-266 (lit 313-393)
+
+CRAC motif: (L/V)-X1-5-(Y)-X1-5-(K/R)
+Raw matches: 8, unique by central Y: 5
+
+  L136-X0-Y137-X2-R140  (TM2)  [L][Y]GY[R]
+    L136 CHL1=0.00  Y137 CHL1=0.24  R140 CHL1=0.00
+  L136-X2-Y139-X0-R140  (ECL1)  [L]YG[Y][R]
+    L136 CHL1=0.00  Y139 CHL1=0.00  R140 CHL1=0.00
+  V251-X2-Y254-X4-K259  (TM5)  [V]IT[Y]FLTI[K] * Y contacts CHL1 *
+    V251 CHL1=0.59  Y254 CHL1=0.99  K259 CHL1=0.17
+  V379-X0-Y380-X4-K385  (H8)  [V][Y]TLFN[K]
+    V379 CHL1=0.99  Y380 CHL1=0.00  K385 CHL1=0.00
+  L382-X4-Y387-X0-R388  (H8)  [L]FNKT[Y][R]
+    L382 CHL1=1.00  Y387 CHL1=0.00  R388 CHL1=0.81
+
+CARC motif (reverse): (K/R)-X1-5-(Y/F)-X1-5-(L/V)
+Raw matches: 3, unique by central Y/F: 2
+
+  R173-X0-Y174-X0-V175  (TM3)  [R][Y][V] * Y/F contacts CHL1 *
+    R173 CHL1=0.00  Y174 CHL1=1.00  V175 CHL1=0.71
+  K191-X1-F193-X0-L194  (TM4)  [K]A[F][L]
+    K191 CHL1=0.08  F193 CHL1=0.00  L194 CHL1=0.35
+
+=================================================================
+RMSF vs total lipid contact frequency
+=================================================================
+Residues with lipid contacts: 190
+Residues with zero contacts: 76
+
+Spearman correlation (all 266 residues): rho=0.030, p=6.32e-01
+Spearman correlation (contacting only):  rho=-0.171, p=1.82e-02
+Spearman (RMSF vs CHL1 only):            rho=-0.015, p=8.12e-01
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/rmsf_vs_contacts.png
+
+Per-region means:
+Region       RMSF   Contacts     CHL1     n
+-------------------------------------------
+TM1          0.56       1.97     0.35    21
+TM2          0.45       1.20     0.20    29
+TM3          0.42       0.73     0.16    29
+ICL1         0.65       0.81     0.02     9
+ICL2         1.24       0.62     0.01    11
+ECL1         0.61       1.30     0.37    12
+ECL2         0.97       0.44     0.25    20
+TM4          0.60       1.65     0.41    28
+TM5          0.64       1.72     0.50    26
+ICL3c        0.81       0.09     0.00     6
+TM6          0.55       1.29     0.30    30
+ECL3         1.15       0.99     0.02    10
+TM7          0.50       0.95     0.39    20
+H8           0.72       0.69     0.29    13
+Ct           1.74       1.78     0.14     2

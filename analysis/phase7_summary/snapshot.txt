@@ -1,0 +1,48 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'altLocs' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'icodes' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'chainIDs' Using default value of ''
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'occupancies' Using default value of '1.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'tempfactors' Using default value of '0.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'elements' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'record_types' Using default value of 'ATOM'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1336: UserWarning: Found missing chainIDs. Corresponding atoms will use value of 'X'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/topology/PDBParser.py:376: UserWarning: Element information is missing, elements attribute will not be populated. If needed these can be guessed using universe.guess_TopologyAttrs(context='default', to_guess=['elements']).
+  warnings.warn("Element information is missing, elements attribute "
+Receptor RMSD: mean = 1.324 A
+Representative frame: 62 (RMSD = 1.328 A, time = 6.2 ns)
+Loaded: 280277 atoms, 100 frames
+Positioned at frame 62, box: 121.3 x 121.3 x 186.6 A
+
+Selections:
+  Receptor:                4327 atoms, 266 residues
+  Ligand:                    32 atoms
+  Membrane:               60840 atoms, 609 residues
+  Receptor + ligand:       4359 atoms
+  Receptor + lig + memb:  65199 atoms
+
+Wrote: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase7_summary/5ht2ar_membrane_snapshot.pdb
+  Receptor + psilocin + 585 lipids (no water, no ions, no G protein)
+Wrote: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase7_summary/5ht2ar_receptor_snapshot.pdb
+  Receptor only (3 segments, 266 residues)
+Wrote: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase7_summary/5ht2ar_receptor_psilocin.pdb
+  Receptor + psilocin (for binding pose figures)
+
+Verify membrane: 65199 atoms, 876 residues, 6 segments
+
+Verify receptor: 4327 atoms, 266 residues, 3 segments
+
+Verify rec+lig: 4359 atoms, 267 residues, 4 segments
+
+Frame 62 (6.2 ns) — representative of the 10 ns trajectory.

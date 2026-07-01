@@ -1,0 +1,39 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Loaded: 100 frames, 280277 atoms
+Membrane midplane Z = 88.8 A
+Leaflets: 123 upper, 159 lower
+
+Discovering C-H pairs...
+  POPC sn-1 (palmitoyl 16:0): 15 carbons, 48 lipids (30U/18L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPC sn-2 (oleoyl 18:1): 17 carbons, 48 lipids (30U/18L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPE sn-1 (palmitoyl 16:0): 15 carbons, 15 lipids (6U/9L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPE sn-2 (oleoyl 18:1): 17 carbons, 15 lipids (6U/9L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3]
+  SDPE sn-1 (stearoyl 18:0): 17 carbons, 54 lipids (18U/36L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  SDPE sn-2 (DHA 22:6): 21 carbons, 54 lipids (18U/36L), H/carbon: [2, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 3]
+
+Computing S_CD (100 frames, 6 chains)...
+  frame 25/100
+  frame 50/100
+  frame 75/100
+  frame 100/100
+Done.
+
+POPC sn-1 (palmitoyl 16:0)  (48 lipids: 30U / 18L)
+  |S_CD| range: 0.035 - 0.324, mean: 0.241
+POPC sn-2 (oleoyl 18:1)  (48 lipids: 30U / 18L)
+  |S_CD| range: 0.043 - 0.303, mean: 0.182
+POPE sn-1 (palmitoyl 16:0)  (15 lipids: 6U / 9L)
+  |S_CD| range: 0.042 - 0.324, mean: 0.254
+POPE sn-2 (oleoyl 18:1)  (15 lipids: 6U / 9L)
+  |S_CD| range: 0.037 - 0.321, mean: 0.189
+SDPE sn-1 (stearoyl 18:0)  (54 lipids: 18U / 36L)
+  |S_CD| range: 0.026 - 0.313, mean: 0.224
+SDPE sn-2 (DHA 22:6)  (54 lipids: 18U / 36L)
+  |S_CD| range: 0.003 - 0.136, mean: 0.056
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_data.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_POPC.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_POPE.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_SDPE.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase5_lipid_order/scd_POPC_leaflets.png

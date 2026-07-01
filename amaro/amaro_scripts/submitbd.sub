@@ -1,0 +1,23 @@
+# #!/bin/bash
+# #PBS -q  #put in your TSCC usage, whether it is home-mccammon or hotel or condo etc
+# #PBS -N name #name your job
+# #PBS -l nodes=1:ppn=3:gpu #put in GPU jobs in multiples of three, or CPU jobs in multiples of 12
+# #PBS -l walltime=192:00:00 #put in max walltime (192:00:00), if your job finishes before you reach the end of your allocation, it will terminate as normal and release the remaining hours
+# #PBS -o name-out.txt #put in your own name
+# #PBS -e name-err.txt #put in your own name
+# #PBS -V #leave blank
+# #PBS -M #if you want email updates about when you submit a job and it finishes, put in your email here
+# #PBS -m abe #leave this as is
+# #PBS -A mccammon-gpu #leave this as is for McCammon users
+
+# INITDIR=path #replace path with the path to the directory you will run stuff in
+
+# cd $INITDIR
+
+# nam_simulation /home/cseitz/run/2hty-oseltamivir-simulation.xml
+
+# #before running, do the command export MODULEPATH=/projects/builder-group/jpg/modulefiles/applications:$MODULEPATH; module load browndye
+# #to load Browndye and be able to run it on TSCC
+
+
+# #remove this comment and all the header numbers above

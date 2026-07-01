@@ -1,0 +1,608 @@
+Loading parameters
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=180.0; per=3> with <DihedralType: k=0.3; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=3> with <DihedralType: k=0.195; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.44; phase=180.0; per=3> with <DihedralType: k=0.195; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.85; phase=180.0; per=3> with <DihedralType: k=0.04; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.3; phase=0.0; per=3> with <DihedralType: k=0.8; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.82; phase=0.0; per=1> with <DihedralType: k=0.14; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=2> with <DihedralType: k=0.17; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.5; phase=0.0; per=3> with <DihedralType: k=0.05; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.33; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=180.0; per=2> with <DihedralType: k=0.4; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.59; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.07; phase=180.0; per=6> with <DihedralType: k=0.0; phase=180.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=3> with <DihedralType: k=0.0; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.29; phase=0.0; per=3> with <DihedralType: k=0.6; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.21; phase=180.0; per=1> with <DihedralType: k=1.9; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=2> with <DihedralType: k=0.4; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.82; phase=0.0; per=2> with <DihedralType: k=1.5; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.42; phase=180.0; per=1> with <DihedralType: k=2.5; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.02; phase=0.0; per=3> with <DihedralType: k=0.5; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.28; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.0; phase=0.0; per=1> with <DihedralType: k=2.5; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.8; phase=0.0; per=2> with <DihedralType: k=1.5; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.3; phase=0.0; per=3> with <DihedralType: k=0.1; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.5; phase=0.0; per=3> with <DihedralType: k=0.16; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=3> with <DihedralType: k=0.8; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.07; phase=0.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.28; phase=0.0; per=3> with <DihedralType: k=0.284; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.17; phase=180.0; per=2> with <DihedralType: k=1.7; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.03; phase=180.0; per=3> with <DihedralType: k=0.3; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.16; phase=180.0; per=2> with <DihedralType: k=0.55; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.8; phase=180.0; per=1> with <DihedralType: k=2.5; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.5; phase=0.0; per=2> with <DihedralType: k=1.5; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.7; phase=0.0; per=3> with <DihedralType: k=0.5; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.07; phase=180.0; per=3> with <DihedralType: k=0.065; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.3; phase=180.0; per=3> with <DihedralType: k=0.195; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.14; phase=180.0; per=3> with <DihedralType: k=0.8; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.3; phase=0.0; per=3> with <DihedralType: k=0.16; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.08; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=2> with <DihedralType: k=1.5; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.28; phase=180.0; per=3> with <DihedralType: k=0.5; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.24; phase=0.0; per=1> with <DihedralType: k=2.5; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.03; phase=0.0; per=3> with <DihedralType: k=0.1; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=4.59; phase=0.0; per=1> with <DihedralType: k=0.6; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.62; phase=0.0; per=3> with <DihedralType: k=0.3; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.23; phase=0.0; per=1> with <DihedralType: k=0.3; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.86; phase=0.0; per=2> with <DihedralType: k=0.55; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.8; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=4.99; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.3; phase=0.0; per=3> with <DihedralType: k=0.1; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.66; phase=180.0; per=2> with <DihedralType: k=1.025; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=3> with <DihedralType: k=0.42; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.97; phase=180.0; per=1> with <DihedralType: k=0.975; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.0; phase=180.0; per=2> with <DihedralType: k=0.0; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.64; phase=180.0; per=1> with <DihedralType: k=0.4; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.31; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.85; phase=0.0; per=3> with <DihedralType: k=2.31; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.21; phase=0.0; per=3> with <DihedralType: k=0.0; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=180.0; per=2> with <DihedralType: k=15.0; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.33; phase=180.0; per=2> with <DihedralType: k=1.025; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=7.81; phase=180.0; per=1> with <DihedralType: k=0.6; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.33; phase=0.0; per=1> with <DihedralType: k=1.0; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.17; phase=0.0; per=2> with <DihedralType: k=0.1; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.07; phase=0.0; per=3> with <DihedralType: k=0.3; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.89; phase=0.0; per=4> with <DihedralType: k=0.2; phase=0.0; per=4>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.59; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.58; phase=180.0; per=2> with <DihedralType: k=2.5; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.65; phase=180.0; per=2> with <DihedralType: k=2.5; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.67; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.97; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.98; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.06; phase=180.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=180.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.1; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=180.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.25; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.08; phase=180.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.43; phase=0.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.07; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.27; phase=0.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.71; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=3> with <DihedralType: k=0.35; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.45; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.03; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.01; phase=0.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.34; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.08; phase=180.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.43; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.13; phase=0.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.11; phase=180.0; per=3> with <DihedralType: k=0.065; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=1> with <DihedralType: k=0.75; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.05; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.1; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.26; phase=180.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.06; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.67; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=1> with <DihedralType: k=0.75; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.53; phase=0.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.34; phase=180.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.27; phase=0.0; per=3> with <DihedralType: k=0.065; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.27; phase=0.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.6; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.11; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.24; phase=0.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.04; phase=0.0; per=3> with <DihedralType: k=0.19; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=180.0; per=3> with <DihedralType: k=0.1; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=2> with <DihedralType: k=0.23; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.23; phase=180.0; per=1> with <DihedralType: k=0.0; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.11; phase=180.0; per=2> with <DihedralType: k=1.4; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.12; phase=0.0; per=1> with <DihedralType: k=0.6; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.42; phase=180.0; per=3> with <DihedralType: k=0.35; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.37; phase=180.0; per=6> with <DihedralType: k=0.09; phase=180.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=3.04; phase=180.0; per=2> with <DihedralType: k=0.39; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.37; phase=180.0; per=1> with <DihedralType: k=0.21; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=3.83; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.22; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.48; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.22; phase=0.0; per=1> with <DihedralType: k=0.6; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.18; phase=0.0; per=3> with <DihedralType: k=0.16; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=3> with <DihedralType: k=0.2; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.37; phase=180.0; per=3> with <DihedralType: k=0.19; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=3> with <DihedralType: k=0.16; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.14; phase=0.0; per=3> with <DihedralType: k=0.2; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.71; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.18; phase=0.0; per=3> with <DihedralType: k=0.185; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.18; phase=0.0; per=3> with <DihedralType: k=0.195; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.44; phase=0.0; per=3> with <DihedralType: k=0.25; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.4; phase=180.0; per=1> with <DihedralType: k=0.16; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.49; phase=180.0; per=2> with <DihedralType: k=0.39; phase=0.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.23; phase=180.0; per=3> with <DihedralType: k=0.1; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=4.23; phase=180.0; per=3> with <DihedralType: k=0.195; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.09; phase=0.0; per=1> with <DihedralType: k=0.75; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.82; phase=180.0; per=3> with <DihedralType: k=0.065; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.34; phase=0.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.16; phase=0.0; per=1> with <DihedralType: k=0.75; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.01; phase=180.0; per=2> with <DihedralType: k=0.18; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.97; phase=180.0; per=3> with <DihedralType: k=0.065; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.08; phase=180.0; per=6> with <DihedralType: k=0.03; phase=0.0; per=6>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.17; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.37; phase=180.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O2', 'CG2R51', 'OG2D1', 'OG311') and New param. k: 53.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O5', 'CG311', 'CG331', 'OG2D3') and New param. k: 70.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O5', 'CG2O5', 'CG321', 'OG2D3') and New param. k: 88.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O5', 'CG301', 'CG321', 'OG2D3') and New param. k: 70.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O5', 'CG311', 'CG321', 'OG2D3') and New param. k: 70.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O2', 'CG301', 'OG2D1', 'OG311') and New param. k: 65.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=2> with <DihedralType: k=1.585; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.71; phase=0.0; per=2> with <DihedralType: k=3.1; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.58; phase=180.0; per=2> with <DihedralType: k=0.0; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=2> with <DihedralType: k=0.0; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:431: UserWarning: Repeat improper dihedral found ('CG2O5', 'CG2DC1', 'CG2R61', 'OG2D3') and New param. k: 72.000000  ,thetaq: 0.000000 will use
+  warnings.warn('Repeat improper dihedral found %r and New param. k: %f  ,thetaq: %f will use' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.2; phase=0.0; per=1> with <DihedralType: k=0.195; phase=0.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.31; phase=0.0; per=3> with <DihedralType: k=0.2; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.31; phase=180.0; per=3> with <DihedralType: k=0.2; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.02; phase=0.0; per=3> with <DihedralType: k=0.19; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.02; phase=180.0; per=3> with <DihedralType: k=0.0; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.19; phase=0.0; per=3> with <DihedralType: k=1.65; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.35; phase=180.0; per=3> with <DihedralType: k=1.65; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=3> with <DihedralType: k=0.12; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.17; phase=180.0; per=3> with <DihedralType: k=0.04; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=3.45; phase=180.0; per=1> with <DihedralType: k=2.4; phase=180.0; per=1>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.27; phase=180.0; per=2> with <DihedralType: k=3.0; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.22; phase=180.0; per=2> with <DihedralType: k=2.4; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.05; phase=0.0; per=3> with <DihedralType: k=0.3; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.25; phase=180.0; per=2> with <DihedralType: k=3.1; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=2.32; phase=180.0; per=2> with <DihedralType: k=2.5; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.32; phase=0.0; per=2> with <DihedralType: k=1.0; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=3> with <DihedralType: k=0.16; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.58; phase=180.0; per=3> with <DihedralType: k=0.15; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.0; phase=0.0; per=3> with <DihedralType: k=0.15; phase=0.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.9; phase=0.0; per=3> with <DihedralType: k=2.31; phase=180.0; per=3>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=1.59; phase=180.0; per=2> with <DihedralType: k=2.5; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/openmm/app/charmmparameterset.py:391: UserWarning: Replacing dihedral <DihedralType: k=0.23; phase=0.0; per=2> with <DihedralType: k=2.5; phase=180.0; per=2>
+  warnings.warn('Replacing dihedral %r with %r' %
+Using platform: HIP
+
+Initial system energy
+-2912403.0979888216 kJ/mol
+
+MD run: 250000 steps
+#"Progress (%)"	"Step"	"Time (ps)"	"Potential Energy (kJ/mole)"	"Temperature (K)"	"Speed (ns/day)"	"Time Remaining"
+550.4%	1376000	2878.9999999427264	-2913876.5979888216	311.41179880707693	0	--
+550.8%	1377000	2882.999999942632	-2915098.7854888216	309.5345780533667	5.72	5:04:27
+551.2%	1378000	2886.999999942537	-2914065.9729888216	310.4768932744466	5.48	4:13:41
+551.6%	1379000	2890.9999999424426	-2916558.6604888216	310.04077987321233	5.37	3:49:18
+552.0%	1380000	2894.999999942348	-2916315.9104888216	309.9677832764361	5.28	3:26:18
+552.4%	1381000	2898.9999999422535	-2914121.2854888216	309.8988828277438	5.18	3:03:28
+552.8%	1382000	2902.999999942159	-2912253.6604888216	311.49794840578494	5.1	2:42:24
+553.2%	1383000	2906.9999999420643	-2914304.9729888216	310.2468717426861	5.02	2:19:54
+553.6%	1384000	2910.9999999419697	-2916742.4729888216	310.1041930336314	4.94	1:58:51
+554.0%	1385000	2914.999999941875	-2914402.8479888216	309.62234840674694	4.87	1:36:54
+554.4%	1386000	2918.9999999417805	-2917135.2229888216	310.56441794427343	4.81	1:19:34
+554.8%	1387000	2922.999999941686	-2916842.7229888216	310.4784406526423	4.74	59:04
+555.2%	1388000	2926.9999999415913	-2916363.9729888216	310.77393855143544	4.69	42:02
+555.6%	1389000	2930.9999999414968	-2915527.0354888216	309.5079515793124	4.64	25:14
+556.0%	1390000	2934.999999941402	-2912496.9104888216	310.75953003419426	4.59	9:26
+556.4%	1391000	2938.9999999413076	-2914377.5979888216	310.79658230072164	4.54	23:52:04
+556.8%	1392000	2942.999999941213	-2913165.7854888216	310.89577258766843	4.5	23:37:36
+557.2%	1393000	2946.9999999411184	-2914982.4729888216	310.75069944196485	4.43	23:13:25
+557.6%	1394000	2950.999999941024	-2913088.6604888216	310.70511935094066	4.39	23:00:31
+558.0%	1395000	2954.9999999409292	-2911496.5354888216	311.43736701900383	4.35	22:45:02
+558.4%	1396000	2958.9999999408346	-2914702.5354888216	309.90886294697344	4.32	22:33:32
+558.8%	1397000	2962.99999994074	-2917860.5354888216	310.68399802233733	4.29	22:19:10
+559.2%	1398000	2966.9999999406455	-2921497.3479888216	310.3454670621213	4.25	22:05:02
+559.6%	1399000	2970.999999940551	-2914813.4104888216	311.180475325994	4.18	21:37:07
+560.0%	1400000	2974.9999999404563	-2914775.3479888216	310.37908216018354	4.12	21:10:45
+560.4%	1401000	2978.9999999403617	-2915727.7229888216	310.0015231607085	4.13	21:13:06
+560.8%	1402000	2982.999999940267	-2913446.4729888216	310.0584470340082	4.14	21:16:07
+561.2%	1403000	2986.9999999401725	-2911363.5979888216	310.1455159131367	4.16	21:24:29
+561.6%	1404000	2990.999999940078	-2913384.2229888216	310.703425291611	4.19	21:33:23
+562.0%	1405000	2994.9999999399834	-2915337.2854888216	309.23604170093927	4.21	21:39:46
+562.4%	1406000	2998.9999999398888	-2914206.2229888216	310.8878936598887	4.23	21:44:25
+562.8%	1407000	3002.999999939794	-2916267.2229888216	310.6247208017306	4.24	21:47:44
+563.2%	1408000	3006.9999999396996	-2914128.9104888216	310.33265329849104	4.25	21:49:48
+563.6%	1409000	3010.999999939605	-2911212.9104888216	310.8605060171619	4.26	21:51:21
+564.0%	1410000	3014.9999999395104	-2915927.5354888216	310.4987957476754	4.26	21:51:39
+564.4%	1411000	3018.999999939416	-2917636.9729888216	310.9225589131783	4.26	21:50:56
+564.8%	1412000	3022.9999999393212	-2916826.9729888216	310.3677948339258	4.26	21:50:18
+565.2%	1413000	3026.9999999392267	-2913275.0354888216	309.63366950276946	4.26	21:49:12
+565.6%	1414000	3030.999999939132	-2914207.4729888216	310.084981836726	4.26	21:47:48
+566.0%	1415000	3034.9999999390375	-2912978.7854888216	310.656551471298	4.26	21:46:19
+566.4%	1416000	3038.999999938943	-2912863.7854888216	310.63345721684664	4.26	21:44:17
+566.8%	1417000	3042.9999999388483	-2917243.6604888216	310.1952431178438	4.26	21:41:04
+567.2%	1418000	3046.9999999387537	-2917505.4104888216	311.27979289689483	4.25	21:37:06
+567.6%	1419000	3050.999999938659	-2916200.5979888216	310.09889906688215	4.25	21:34:36
+568.0%	1420000	3054.9999999385645	-2915675.7229888216	310.54120739928135	4.24	21:31:48
+568.4%	1421000	3058.99999993847	-2913752.9729888216	309.8045613421228	4.24	21:28:54
+568.8%	1422000	3062.9999999383754	-2914535.0979888216	310.36569367190094	4.23	21:25:57
+569.2%	1423000	3066.999999938281	-2912614.9729888216	310.03939953944325	4.23	21:22:55
+569.6%	1424000	3070.999999938186	-2915884.4104888216	310.20580978214326	4.22	21:19:13
+570.0%	1425000	3074.9999999380916	-2913822.3479888216	311.01549256863757	4.22	21:16:18
+570.4%	1426000	3078.999999937997	-2912719.1604888216	309.82015074468035	4.22	21:13:33
+570.8%	1427000	3082.9999999379024	-2913629.4729888216	310.5903832315531	4.21	21:10:37
+571.2%	1428000	3086.999999937808	-2913056.8479888216	310.3319713315133	4.21	21:07:42
+571.6%	1429000	3090.9999999377133	-2918883.7854888216	310.9649814931276	4.2	21:05:00
+572.0%	1430000	3094.9999999376187	-2915924.2854888216	311.5954099311708	4.2	21:02:09
+572.4%	1431000	3098.999999937524	-2912917.3479888216	310.0041933319585	4.2	20:59:30
+572.8%	1432000	3102.9999999374295	-2914948.3479888216	310.9862203594451	4.19	20:56:44
+573.2%	1433000	3106.999999937335	-2914570.5979888216	310.7664115703729	4.19	20:53:57
+573.6%	1434000	3110.9999999372403	-2916961.4729888216	309.8635004219257	4.19	20:51:22
+574.0%	1435000	3114.9999999371457	-2917299.1604888216	309.84927508983424	4.18	20:48:29
+574.4%	1436000	3118.999999937051	-2911950.5354888216	310.2646372533025	4.18	20:45:55
+574.8%	1437000	3122.9999999369566	-2915543.9729888216	311.0367119769965	4.18	20:43:21
+575.2%	1438000	3126.999999936862	-2916540.4104888216	309.6575912647368	4.17	20:40:45
+575.6%	1439000	3130.9999999367674	-2916109.2229888216	310.1079860497307	4.17	20:38:17
+576.0%	1440000	3134.999999936673	-2915954.2229888216	310.74077997881136	4.17	20:35:43
+576.4%	1441000	3138.999999936578	-2916703.2854888216	310.73442055107034	4.17	20:33:20
+576.8%	1442000	3142.9999999364836	-2913254.3479888216	311.79753925746996	4.16	20:30:48
+577.2%	1443000	3146.999999936389	-2912558.9104888216	310.50855781445443	4.16	20:28:21
+577.6%	1444000	3150.9999999362944	-2919939.5354888216	310.0176375381766	4.16	20:26:04
+578.0%	1445000	3154.9999999362	-2917411.4729888216	310.52639056325165	4.16	20:23:30
+578.4%	1446000	3158.9999999361053	-2916106.6604888216	310.3123868841766	4.15	20:20:56
+578.8%	1447000	3162.9999999360107	-2918792.5979888216	310.0670421439889	4.15	20:18:33
+579.2%	1448000	3166.999999935916	-2916636.0979888216	310.6685080190071	4.15	20:16:10
+579.6%	1449000	3170.9999999358215	-2915929.2229888216	310.59420789601893	4.14	20:13:41
+580.0%	1450000	3174.999999935727	-2914709.0354888216	309.9177353016354	4.14	20:11:10
+580.4%	1451000	3178.9999999356323	-2920067.9729888216	311.4469587847099	4.14	20:08:41
+580.8%	1452000	3182.9999999355377	-2914921.0354888216	309.98251771079117	4.14	20:06:29
+581.2%	1453000	3186.999999935443	-2915269.4729888216	310.6518476439992	4.14	20:04:16
+581.6%	1454000	3190.9999999353486	-2916819.9729888216	310.97310804442384	4.13	20:02:04
+582.0%	1455000	3194.999999935254	-2919291.4729888216	310.42538387916335	4.13	19:59:56
+582.4%	1456000	3198.9999999351594	-2914441.0354888216	309.6453772740429	4.13	19:57:44
+582.8%	1457000	3202.999999935065	-2916869.4729888216	310.9618552802748	4.13	19:55:32
+583.2%	1458000	3206.99999993497	-2912751.9104888216	310.8239464382274	4.13	19:53:14
+583.6%	1459000	3210.9999999348756	-2917538.9104888216	309.8936234737219	4.12	19:50:51
+584.0%	1460000	3214.999999934781	-2918615.3479888216	309.76218515166664	4.12	19:48:40
+584.4%	1461000	3218.9999999346865	-2916235.5354888216	310.997520031445	4.12	19:46:32
+584.8%	1462000	3222.999999934592	-2916456.9729888216	310.56232544136157	4.12	19:44:16
+585.2%	1463000	3226.9999999344973	-2917448.2854888216	311.00539969747143	4.11	19:41:59
+585.6%	1464000	3230.9999999344027	-2916613.8479888216	311.3327920932666	4.11	19:39:59
+586.0%	1465000	3234.999999934308	-2915499.8479888216	310.251834016373	4.11	19:37:49
+586.4%	1466000	3238.9999999342135	-2914107.7229888216	311.64688221520817	4.11	19:35:33
+586.8%	1467000	3242.999999934119	-2914465.7229888216	311.0579776816361	4.11	19:33:35
+587.2%	1468000	3246.9999999340243	-2915362.7229888216	309.5164669153816	4.11	19:31:28
+587.6%	1469000	3250.9999999339298	-2917510.9729888216	310.76304067482	4.1	19:29:18
+588.0%	1470000	3254.999999933835	-2915164.0979888216	310.1324069077186	4.1	19:25:32
+588.4%	1471000	3258.9999999337406	-2916365.9104888216	311.08110849416005	4.1	19:23:13
+588.8%	1472000	3262.999999933646	-2911610.4104888216	309.3277433292325	4.09	19:20:55
+589.2%	1473000	3266.9999999335514	-2914057.9729888216	311.79449958066505	4.09	19:18:49
+589.6%	1474000	3270.999999933457	-2913322.9104888216	309.46151054594344	4.09	19:16:37
+590.0%	1475000	3274.9999999333622	-2914899.4729888216	310.110088590365	4.09	19:14:18
+590.4%	1476000	3278.9999999332676	-2913412.9729888216	311.2618441818485	4.09	19:11:59
+590.8%	1477000	3282.999999933173	-2910547.3479888216	309.66562096089046	4.08	19:09:53
+591.2%	1478000	3286.9999999330785	-2915898.7229888216	309.92538904439056	4.08	19:07:41
+591.6%	1479000	3290.999999932984	-2912486.3479888216	311.6707163689563	4.08	19:05:43
+592.0%	1480000	3294.9999999328893	-2914758.9729888216	310.6660706422637	4.08	19:03:36
+592.4%	1481000	3298.9999999327947	-2911878.6604888216	310.3463997164755	4.08	19:01:30
+592.8%	1482000	3302.9999999327	-2912521.6604888216	310.06268599572917	4.08	18:59:27
+593.2%	1483000	3306.9999999326055	-2913925.0354888216	310.0454158214436	4.08	18:57:33
+593.6%	1484000	3310.999999932511	-2913789.7229888216	310.3694880059037	4.07	18:55:31
+594.0%	1485000	3314.9999999324164	-2915621.3479888216	310.7517294767091	4.07	18:53:33
+594.4%	1486000	3318.9999999323218	-2918252.9729888216	310.1597997051521	4.07	18:51:33
+594.8%	1487000	3322.999999932227	-2916024.2854888216	310.5039568428059	4.07	18:49:29
+595.2%	1488000	3326.9999999321326	-2913988.8479888216	311.0793893430509	4.07	18:47:26
+595.6%	1489000	3330.999999932038	-2913618.0354888216	310.7925508837005	4.07	18:45:19
+596.0%	1490000	3334.9999999319434	-2914144.4729888216	310.7077222357675	4.07	18:43:24
+596.4%	1491000	3338.999999931849	-2915300.6604888216	309.9079781778648	4.06	18:41:27
+596.8%	1492000	3342.9999999317542	-2917148.4104888216	310.89383737160006	4.06	18:39:24
+597.2%	1493000	3346.9999999316597	-2916012.4729888216	310.86265043985037	4.06	18:37:22
+597.6%	1494000	3350.999999931565	-2912231.4104888216	309.8905407760357	4.06	18:35:24
+598.0%	1495000	3354.9999999314705	-2914001.5979888216	311.50414912167525	4.06	18:33:21
+598.4%	1496000	3358.999999931376	-2915518.7854888216	310.5862563600165	4.06	18:31:21
+598.8%	1497000	3362.9999999312813	-2914603.5354888216	310.33520887088457	4.06	18:29:26
+599.2%	1498000	3366.9999999311867	-2915452.7229888216	310.507302084247	4.06	18:27:35
+599.6%	1499000	3370.999999931092	-2914503.0979888216	309.50524405032405	4.05	18:25:49
+600.0%	1500000	3374.9999999309975	-2917548.9104888216	310.77849699432545	4.05	18:23:51
+600.4%	1501000	3378.999999930903	-2917394.7229888216	311.01530390272217	4.05	18:21:53
+600.8%	1502000	3382.9999999308084	-2915226.9729888216	310.09325146359225	4.05	18:19:53
+601.2%	1503000	3386.999999930714	-2918090.1604888216	310.37259389887305	4.05	18:18:01
+601.6%	1504000	3390.999999930619	-2917068.0354888216	310.7730022215687	4.05	18:16:15
+602.0%	1505000	3394.9999999305246	-2917263.6604888216	309.6951439504813	4.05	18:14:13
+602.4%	1506000	3398.99999993043	-2916560.3479888216	309.9886293874915	4.05	18:12:20
+602.8%	1507000	3402.9999999303354	-2913997.8479888216	310.74240373195556	4.05	18:10:20
+603.2%	1508000	3406.999999930241	-2912802.7854888216	311.236838022714	4.04	18:08:25
+603.6%	1509000	3410.9999999301463	-2916979.0354888216	310.4452691538149	4.04	18:06:26
+604.0%	1510000	3414.9999999300517	-2914992.8479888216	311.06167265942105	4.04	18:04:19
+604.4%	1511000	3418.999999929957	-2915574.5979888216	309.4728886906137	4.04	18:02:16
+604.8%	1512000	3422.9999999298625	-2914159.9729888216	310.78625459883375	4.04	18:00:22
+605.2%	1513000	3426.999999929768	-2913232.3479888216	310.41394660367854	4.04	17:58:27
+605.6%	1514000	3430.9999999296733	-2916525.2229888216	310.51149529623365	4.04	17:56:32
+606.0%	1515000	3434.9999999295787	-2914716.2229888216	310.5173363471218	4.04	17:54:38
+606.4%	1516000	3438.999999929484	-2914793.8479888216	310.9765238664143	4.03	17:52:40
+606.8%	1517000	3442.9999999293896	-2917444.7854888216	310.452370892868	4.03	17:50:42
+607.2%	1518000	3446.999999929295	-2914456.7229888216	310.48797544338566	4.03	17:48:44
+607.6%	1519000	3450.9999999292004	-2914268.8479888216	310.16185197949085	4.03	17:46:55
+608.0%	1520000	3454.999999929106	-2916312.1604888216	309.3797649909836	4.03	17:44:59
+608.4%	1521000	3458.999999929011	-2914853.5979888216	309.9519628090791	4.03	17:43:04
+608.8%	1522000	3462.9999999289166	-2916599.7229888216	309.7822358295611	4.03	17:41:13
+609.2%	1523000	3466.999999928822	-2915485.4729888216	310.0275046654571	4.03	17:39:29
+609.6%	1524000	3470.9999999287274	-2915344.5354888216	309.84584454837227	4.03	17:37:39
+610.0%	1525000	3474.999999928633	-2918681.9729888216	310.49686521462615	4.03	17:35:49
+610.4%	1526000	3478.9999999285383	-2917690.3479888216	309.92405423806645	4.03	17:34:03
+610.8%	1527000	3482.9999999284437	-2917069.0979888216	310.3969633835297	4.02	17:32:14
+611.2%	1528000	3486.999999928349	-2916210.3479888216	310.45786769285553	4.02	17:30:25
+611.6%	1529000	3490.9999999282545	-2920273.7854888216	309.8311957838161	4.02	17:28:40
+612.0%	1530000	3494.99999992816	-2915861.4104888216	311.0047434841941	4.02	17:26:59
+612.4%	1531000	3498.9999999280653	-2913420.9729888216	309.8189194297436	4.02	17:25:06
+612.8%	1532000	3502.9999999279707	-2915896.9729888216	310.3276932792169	4.02	17:23:17
+613.2%	1533000	3506.999999927876	-2916667.1604888216	311.2824110699779	4.02	17:21:32
+613.6%	1534000	3510.9999999277816	-2914380.7854888216	310.22219537435404	4.02	17:19:46
+614.0%	1535000	3514.999999927687	-2916444.5979888216	311.46704716876263	4.02	17:17:58
+614.4%	1536000	3518.9999999275924	-2918908.6604888216	310.09524898546556	4.02	17:16:11
+614.8%	1537000	3522.999999927498	-2917502.8479888216	310.67552523410205	4.02	17:14:25
+615.2%	1538000	3526.999999927403	-2915637.2229888216	310.099566413153	4.02	17:12:39
+615.6%	1539000	3530.9999999273086	-2914936.2229888216	310.25976967484195	4.01	17:10:12
+616.0%	1540000	3534.999999927214	-2918891.3479888216	310.6620479451061	4.02	17:09:38
+616.4%	1541000	3538.9999999271195	-2914386.2229888216	309.8553007903497	4.02	17:09:46
+616.8%	1542000	3542.999999927025	-2918057.9104888216	310.3314064211332	4.02	17:07:08
+617.2%	1543000	3546.9999999269303	-2916759.5979888216	311.2426633226418	4.02	17:05:20
+617.6%	1544000	3550.9999999268357	-2913812.7229888216	309.81253279585866	4.02	17:05:31
+618.0%	1545000	3554.999999926741	-2914788.6604888216	310.29298077965115	4.02	17:05:05
+618.4%	1546000	3558.9999999266465	-2916747.2854888216	310.6574787261929	4.02	17:04:55
+618.8%	1547000	3562.999999926552	-2912148.4104888216	309.7330513020653	4.03	17:04:21
+619.2%	1548000	3566.9999999264573	-2913611.0979888216	310.5685036234632	4.03	17:04:03
+619.6%	1549000	3570.9999999263628	-2915350.9104888216	310.2736579556821	4.03	17:03:50
+620.0%	1550000	3574.999999926268	-2916942.0354888216	309.9412259834422	4.03	17:01:25
+620.4%	1551000	3578.9999999261736	-2915453.8479888216	311.3485716262703	4.03	16:59:27
+620.8%	1552000	3582.999999926079	-2916854.0354888216	311.01899469518946	4.03	16:57:55
+621.2%	1553000	3586.9999999259844	-2918195.6604888216	309.5399650905433	4.03	16:56:47
+621.6%	1554000	3590.99999992589	-2916205.4729888216	311.074111882716	4.03	16:56:21
+622.0%	1555000	3594.9999999257952	-2910051.2229888216	310.8664599160557	4.04	16:57:07
+622.4%	1556000	3598.9999999257006	-2914577.9729888216	311.0185709935911	4.04	16:57:37
+622.8%	1557000	3602.999999925606	-2909163.0979888216	311.54406762304643	4.04	16:56:40
+623.2%	1558000	3606.9999999255115	-2913792.9104888216	309.9788211339883	4.04	16:55:33
+623.6%	1559000	3610.999999925417	-2912803.7229888216	309.64704729399904	4.04	16:53:30
+624.0%	1560000	3614.9999999253223	-2912943.7229888216	310.15110013664673	4.04	16:51:20
+624.4%	1561000	3618.9999999252277	-2918200.5354888216	310.9733507078163	4.04	16:49:22
+624.8%	1562000	3622.999999925133	-2915446.2229888216	310.52561524260915	4.03	16:46:55
+625.2%	1563000	3626.9999999250385	-2917783.4729888216	310.4413763400851	4.04	16:45:44
+625.6%	1564000	3630.999999924944	-2915806.7229888216	310.97619801548024	4.03	16:43:52
+626.0%	1565000	3634.9999999248494	-2918236.2854888216	309.4845659295667	4.03	16:42:16
+626.4%	1566000	3638.999999924755	-2913643.2854888216	309.8046269510344	4.04	16:41:52
+626.8%	1567000	3642.99999992466	-2915813.1604888216	310.01268832678613	4.04	16:41:24
+627.2%	1568000	3646.9999999245656	-2912654.6604888216	309.3501963718772	4.04	16:40:41
+627.6%	1569000	3650.999999924471	-2915205.5979888216	309.7765773547607	4.04	16:39:45
+628.0%	1570000	3654.9999999243764	-2918205.1604888216	310.7335363464919	4.04	16:37:19
+628.4%	1571000	3658.999999924282	-2917094.7854888216	309.74512242681743	4.04	16:34:53
+628.8%	1572000	3662.9999999241873	-2917298.9104888216	309.8795007722386	4.03	16:31:50
+629.2%	1573000	3666.9999999240927	-2913981.0354888216	309.79436613767416	4.03	16:27:53
+629.6%	1574000	3670.999999923998	-2915126.0979888216	310.3786221337173	4.02	16:23:49
+630.0%	1575000	3674.9999999239035	-2920724.4729888216	310.2251820054738	4.02	16:19:53
+630.4%	1576000	3678.999999923809	-2914406.8479888216	310.6221192051319	4.01	16:17:36
+630.8%	1577000	3682.9999999237143	-2916001.2854888216	309.9419680137771	4.02	16:16:20
+631.2%	1578000	3686.9999999236197	-2917319.6604888216	310.2212816590053	4.02	16:15:04
+631.6%	1579000	3690.999999923525	-2915730.2854888216	310.5893862987572	4.01	16:12:53
+632.0%	1580000	3694.9999999234306	-2918116.5354888216	310.90469241153517	4.01	16:11:33
+632.4%	1581000	3698.999999923336	-2914795.9104888216	310.5688226787764	4.01	16:09:46
+632.8%	1582000	3702.9999999232414	-2918017.2229888216	310.9128844814156	4.01	16:08:18
+633.2%	1583000	3706.999999923147	-2919885.7229888216	309.87260018232934	4.01	16:07:30
+633.6%	1584000	3710.999999923052	-2918047.9104888216	309.497295192297	4.02	16:07:05
+634.0%	1585000	3714.9999999229576	-2918835.4104888216	310.8640008407934	4.02	16:06:35
+634.4%	1586000	3718.999999922863	-2916877.7854888216	310.3377533554423	4.02	16:05:54
+634.8%	1587000	3722.9999999227684	-2918108.7229888216	310.4991827368997	4.02	16:05:41
+635.2%	1588000	3726.999999922674	-2917760.4729888216	309.7261852077072	4.03	16:05:34
+635.6%	1589000	3730.9999999225793	-2916361.4729888216	309.9229573619295	4.03	16:04:50
+636.0%	1590000	3734.9999999224847	-2915624.8479888216	311.11340585010475	4.03	16:04:01
+636.4%	1591000	3738.99999992239	-2917897.7229888216	310.69263984812	4.03	16:03:15
+636.8%	1592000	3742.9999999222955	-2912095.0979888216	311.3035126497861	4.03	16:02:45
+637.2%	1593000	3746.999999922201	-2912513.5354888216	310.40590120759845	4.03	16:01:45
+637.6%	1594000	3750.9999999221063	-2914492.5979888216	310.1536671989879	4.03	16:00:48
+638.0%	1595000	3754.9999999220117	-2921364.0979888216	310.4112275802745	4.03	15:59:58
+638.4%	1596000	3758.999999921917	-2918613.5354888216	311.7367321754722	4.04	15:59:49
+638.8%	1597000	3762.9999999218226	-2918429.5979888216	308.8859331876575	4.04	15:58:21
+639.2%	1598000	3766.999999921728	-2920610.9104888216	310.7101866851603	4.04	15:56:49
+639.6%	1599000	3770.9999999216334	-2919296.5354888216	310.97223450413395	4.04	15:54:50
+640.0%	1600000	3774.999999921539	-2916915.5354888216	310.88399472631085	4.03	15:52:34
+640.4%	1601000	3778.999999921444	-2916568.7854888216	310.73641883730903	4.03	15:50:28
+640.8%	1602000	3782.9999999213496	-2919681.5354888216	310.986889966316	4.03	15:48:54
+641.2%	1603000	3786.999999921255	-2918762.9729888216	310.3366259436	4.03	15:46:15
+641.6%	1604000	3790.9999999211605	-2917908.5354888216	309.0185962246628	4.03	15:44:04
+642.0%	1605000	3794.999999921066	-2916359.4729888216	309.9865286023775	4.03	15:42:57
+642.4%	1606000	3798.9999999209713	-2917640.3479888216	310.9223543435561	4.03	15:41:08
+642.8%	1607000	3802.9999999208767	-2917797.0979888216	310.06581387608315	4.03	15:39:32
+643.2%	1608000	3806.999999920782	-2913447.0979888216	310.0702788217497	4.03	15:37:36
+643.6%	1609000	3810.9999999206875	-2915416.9729888216	310.08072796976273	4.02	15:35:03
+644.0%	1610000	3814.999999920593	-2915755.3479888216	311.0646375490009	4.02	15:33:04
+644.4%	1611000	3818.9999999204983	-2914476.2854888216	310.2479011558438	4.02	15:31:10
+644.8%	1612000	3822.9999999204038	-2917621.0354888216	309.5174335678716	4.02	15:29:08
+645.2%	1613000	3826.999999920309	-2917299.2229888216	310.83656400197833	4.02	15:26:07
+645.6%	1614000	3830.9999999202146	-2915966.0979888216	310.6743214843087	4.01	15:22:38
+646.0%	1615000	3834.99999992012	-2913890.7229888216	310.4415014448645	4.01	15:20:06
+646.4%	1616000	3838.9999999200254	-2917814.2229888216	311.3432656973094	4.01	15:17:10
+646.8%	1617000	3842.999999919931	-2917255.2854888216	309.8205932374796	4.01	15:14:01
+647.2%	1618000	3846.9999999198362	-2913003.2229888216	309.79715743023166	4	15:10:58
+647.6%	1619000	3850.9999999197416	-2915786.7229888216	310.63654492248554	4	15:07:44
+648.0%	1620000	3854.999999919647	-2920013.8479888216	310.4283347852134	3.99	15:04:05
+648.4%	1621000	3858.9999999195525	-2916433.8479888216	310.58340191979454	3.99	15:00:09
+648.8%	1622000	3862.999999919458	-2915221.9729888216	310.42786553517124	3.99	14:56:58
+649.2%	1623000	3866.9999999193633	-2914702.1604888216	310.75055438391956	3.98	14:54:28
+649.6%	1624000	3870.9999999192687	-2917138.2229888216	311.3822701469769	3.98	14:52:35
+650.0%	1625000	3874.999999919174	-2914101.8479888216	309.5068599611424	3.98	14:50:32

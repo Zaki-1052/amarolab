@@ -1,0 +1,19 @@
+# Equilibration DCDs over 100MB (160MB each)
+openmm/step6.4_equilibration.dcd
+openmm/step6.5_equilibration.dcd
+openmm/step6.6_equilibration.dcd
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Editors
+*.swp
+*.swo
+*~

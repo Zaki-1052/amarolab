@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --job-name="5ht2a_prod"
+#SBATCH --output="step7_slurm_%j.%N.out"
+#SBATCH --partition=gpu-shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=64G
+#SBATCH --gpus=1
+#SBATCH --account=csd940
+#SBATCH --time=01:00:00
+
+START_BLOCK=2
+END_BLOCK=10
+
+source ~/.bashrc
+conda activate biochemcore
+
+cd /expanse/lustre/projects/csd940/zalibhai/biochemcore/charmm-gui-8190629385/openmm
+
+echo "Job $SLURM_JOB_ID started at $(date)"
+echo "Node: $(hostname)"
+nvidia-smi --query-gpu=name,driver_version --format=csv,noheader 2>/dev/null
+python -c "import openmm; print('OpenMM:', openmm.__version__); print('Platforms:', [openmm.Platform.getPlatform(i).getName() for i in range(openmm.Platform.getNumPlatforms())])"
+
+bash run_production.sh "$START_BLOCK" "$END_BLOCK"
+
+echo "Job finished at $(date)"
