@@ -1,15 +1,17 @@
-# charmm-gui-8190629385/analysis/phase7_summary/p7_snapshot.py
+# analysis/phase7_summary/p7_snapshot.py
+from pathlib import Path
 import MDAnalysis as mda
 import numpy as np
 import pandas as pd
 
-BASE = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/openmm'
-OUT  = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase7_summary'
+ROOT = Path(__file__).resolve().parent.parent.parent
+BASE = str(ROOT / 'openmm')
+OUT  = str(Path(__file__).resolve().parent)
 
 PSF  = f'{BASE}/step5_input.psf'
 DCDS = [f'{BASE}/step7_{i}.dcd' for i in range(1, 11)]
 
-RMSD_CSV = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase2_rmsd/rmsd_data.csv'
+RMSD_CSV = str(ROOT / 'analysis' / 'phase2_rmsd' / 'rmsd_data.csv')
 
 GLPA = " ".join([f"GLPA{i}" for i in range(1, 25)])
 

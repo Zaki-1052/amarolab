@@ -1,12 +1,14 @@
-# p4_psilocin.py
+# analysis/phase4_psilocin/p4_psilocin.py
+from pathlib import Path
 import MDAnalysis as mda
 from MDAnalysis.analysis.rms import RMSD
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-BASE = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/openmm'
-OUT  = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase4_psilocin'
+ROOT = Path(__file__).resolve().parent.parent.parent
+BASE = str(ROOT / 'openmm')
+OUT  = str(Path(__file__).resolve().parent)
 
 PSF  = f'{BASE}/step5_input.psf'
 DCDS = [f'{BASE}/step7_{i}.dcd' for i in range(1, 11)]

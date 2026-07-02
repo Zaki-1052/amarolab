@@ -1,4 +1,5 @@
-# charmm-gui-8190629385/analysis/phase6_contacts/p6_contacts.py
+# analysis/phase6_contacts/p6_contacts.py
+from pathlib import Path
 import MDAnalysis as mda
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,8 +7,9 @@ import pandas as pd
 from MDAnalysis.lib.distances import capped_distance
 from collections import defaultdict
 
-BASE = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/openmm'
-OUT  = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis/phase6_contacts'
+ROOT = Path(__file__).resolve().parent.parent.parent
+BASE = str(ROOT / 'openmm')
+OUT  = str(Path(__file__).resolve().parent)
 
 PSF  = f'{BASE}/step5_input.psf'
 DCDS = [f'{BASE}/step7_{i}.dcd' for i in range(1, 11)]

@@ -1,10 +1,11 @@
-# charmm-gui-8190629385/analysis/p_crossphase.py
+# analysis/p_crossphase.py
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 
-BASE = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/analysis'
+BASE = str(Path(__file__).resolve().parent)
 OUT  = BASE
 
 rmsf_df = pd.read_csv(f'{BASE}/phase3_rmsf/rmsf_data.csv')

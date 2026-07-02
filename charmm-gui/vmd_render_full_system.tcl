@@ -1,14 +1,14 @@
-# charmm-gui-8190629385/vmd_render_full_system.tcl
+# charmm-gui/vmd_render_full_system.tcl
 # Renders the full CHARMM-GUI assembled system (280K atoms, PSF + PDB).
-# Usage: cd to this directory, then: source vmd_render_full_system.tcl
+# Usage: cd to amarolab/, then: source charmm-gui/vmd_render_full_system.tcl
 # Note: QuickSurf on 280K atoms is slow. Allow 30-60s for the surface to compute.
 
 # ── Per-system configuration ──────────────────────────────────────────────────
 
-set psf_file    "step5_assembly.psf"
-set pdb_file    "step5_assembly.pdb"
+set psf_file    "charmm-gui/step5_assembly.psf"
+set pdb_file    "charmm-gui/step5_assembly.pdb"
 set ligand_sel  "resname LIG"
-set output_name "Figure_5HT2A_psilocin_membrane_full"
+set output_name "renders/Figure_5HT2A_psilocin_membrane_full"
 
 # Full Ingolfsson Brain PM composition
 set lipid_sel   "resname POPC DOPC POPE POPS POPI SAPI PAPC PAPE PAPS SDPC SDPE SDPS PSM SSM GLPA CHL1 and noh"

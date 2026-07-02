@@ -1,8 +1,10 @@
-# p5_crossval_explore.py
+# analysis/phase5_lipid_order/p5_crossval_explore.py
+from pathlib import Path
 import MDAnalysis as mda
 import numpy as np
 
-BASE = '/Users/zakiralibhai/Documents/School/biochemcore/charmm-gui-8190629385/openmm'
+ROOT = Path(__file__).resolve().parent.parent.parent
+BASE = str(ROOT / 'openmm')
 PSF  = f'{BASE}/step5_input.psf'
 DCDS = [f'{BASE}/step7_{i}.dcd' for i in range(1, 11)]
 
