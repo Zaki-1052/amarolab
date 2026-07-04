@@ -1,0 +1,53 @@
+/home/charmm-gui/www/../data/www/8313215931/ppm_6a488981a973a.pdb               
+heteroatoms excluded
+atom not in library: CAY  A MET     1
+atom not in library: CY   A MET     1
+atom not in library: OY   A MET     1
+atom not in library: NT   A ASN   340
+atom not in library: CAY  B MET     1
+atom not in library: CY   B MET     1
+atom not in library: OY   B MET     1
+atom not in library: NT   B LEU    71
+atom not in library: CAY  C THR     1
+atom not in library: CY   C THR     1
+atom not in library: OY   C THR     1
+atom not in library: NT   C HIS    54
+atom not in library: CAY  D THR    55
+atom not in library: CY   D THR    55
+atom not in library: OY   D THR    55
+atom not in library: NT   D PHE   227
+atom not in library: CAY  E LEU     1
+atom not in library: CY   E LEU     1
+atom not in library: OY   E LEU     1
+atom not in library: NT   E GLN   183
+atom not in library: CAY  F ILE   184
+atom not in library: CY   F ILE   184
+atom not in library: OY   F ILE   184
+atom not in library: NT   F ARG   262
+Initial optimiz. in hydrocarbon slab with approximate energy functions:
+emin=  -106.0 slab thickn.=    36.0
+    7 possible transmembrane secondary structure segments
+   1 E    5   26  22
+   2 E   27   58  32
+   3 E   67  105  39
+   4 E  109  140  32
+   5 E  155  181  27
+   6 F  186  217  32
+   7 F  224  256  33
+Possible transmembrane protein, checking... 
+N interact. lipids:  30
+#/hom;B; 22;65-71
+#/hom;E; 22;1-18,21,31-57,60,62,64,68-95,111-133,136,150,153-177
+#/hom;F; 13;193-217,226-251
+E   5  18    36.  -10.9
+E  32  57    30.  -12.2
+E  68  93    32.   -5.6
+E 112 134     5.  -15.3
+E 155 178    23.  -17.1
+F 193 217     9.  -13.6
+F 226 251    17.  -10.9
+TMH contribution:   -85.6
+Subunit E    17.
+Subunit F     9.
+Tilt angle:   10.2
+/home/char emin=   -76.1 thickn= 33.0+- 1.2 tilt=    10.+-    1.

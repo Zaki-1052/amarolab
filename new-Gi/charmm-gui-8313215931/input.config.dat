@@ -1,0 +1,1 @@
+{"systype":"bilayer","dimensions":["128.487977","128.487977","175.152441","90.0","90.0","90.0"],"input":["openmm"],"forcefield":{"type":"c36m","files":["default","stream\/lipid\/toppar_all36_lipid_cationpi_wyf.str"],"custom":["lig\/lig.rtf","lig\/lig.prm"]},"hmr":1}
