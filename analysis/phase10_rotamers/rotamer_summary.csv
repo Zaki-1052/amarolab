@@ -1,0 +1,8 @@
+lit_label,resname,segid,resid,chi1_mean,chi1_std,chi1_range,chi2_mean,chi2_std,chi2_range,dominant_rotamer,n_chi1_transitions
+W336,TRP,PROC,209,-65.7,7.5,48.2,106.6,9.3,52.0,g-,0
+F339,PHE,PROC,212,170.9,6.9,359.8,67.9,9.9,52.9,t,0
+F340,PHE,PROC,213,-75.0,7.3,42.2,-73.0,8.6,38.1,g-,0
+F234,PHE,PROB,156,179.8,8.2,359.3,-17.3,125.3,275.6,t,0
+F243,PHE,PROB,165,179.5,6.9,359.8,69.7,9.1,59.4,t,0
+Y370,TYR,PROC,243,-65.5,6.4,31.4,-28.1,10.8,60.8,g-,0
+D155,ASP,PROA,77,-177.3,8.6,359.1,26.5,14.9,75.4,t,0

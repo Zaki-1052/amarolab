@@ -1,0 +1,30 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336: 9 ring atoms selected
+F339: 6 ring atoms selected
+F340: 6 ring atoms selected
+F234: 6 ring atoms selected
+F243: 6 ring atoms selected
+Y370: 6 ring atoms selected
+Psilocin: 9 ring atoms selected
+  frame 20/100
+  frame 40/100
+  frame 60/100
+  frame 80/100
+  frame 100/100
+
+Ring          Total (°)  Rotations Mean Δ (°)  Max Δ (°)  Std Δ (°)
+------------------------------------------------------------------
+W336             1035.1       2.88      10.46      28.33       5.88
+F339             1273.8       3.54      12.87      43.25       7.39
+F340              989.2       2.75       9.99      25.49       5.48
+F234             2390.2       6.64      24.14      89.65      18.61
+F243             1046.3       2.91      10.57      36.02       6.48
+Y370             1129.0       3.14      11.40      34.89       6.61
+Psilocin         1058.3       2.94      10.69      31.23       5.45
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase9_aromatics/aromatic_rotations.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase9_aromatics/aromatic_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase9_aromatics/cumulative_rotations.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase9_aromatics/rotation_summary.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase9_aromatics/angular_changes.png

@@ -1,0 +1,68 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Binding pocket: 25 residues
+  PROA LEU  45  (lit LEU123)
+  PROA VAL  49  (lit VAL127)
+  PROA ILE  74  (lit ILE152)
+  PROA ASP  77  (lit ASP155)
+  PROA VAL  78  (lit VAL156)
+  PROA SER  81  (lit SER159)
+  PROA THR  82  (lit THR160)
+  PROA ILE  85  (lit ILE163)
+  PROB ILE 128  (lit ILE206)
+  PROB LEU 151  (lit LEU229)
+  PROB PHE 156  (lit PHE234)
+  PROB VAL 157  (lit VAL235)
+  PROB LEU 158  (lit LEU236)
+  PROB GLY 160  (lit GLY238)
+  PROB SER 161  (lit SER239)
+  PROB SER 164  (lit SER242)
+  PROB PHE 165  (lit PHE243)
+  PROC TRP 209  (lit TRP336)
+  PROC PHE 212  (lit PHE339)
+  PROC PHE 213  (lit PHE340)
+  PROC ASN 216  (lit ASN343)
+  PROC ILE 217  (lit ILE344)
+  PROC VAL 239  (lit VAL366)
+  PROC GLY 242  (lit GLY369)
+  PROC TYR 243  (lit TYR370)
+
+Running direct H-bond analysis...
+Raw H-bond results shape: (5311, 6)
+Total H-bond observations across trajectory: 5311
+Direct H-bonds per frame: 53.1 +/- 7.5 (range 40-74)
+
+Per-residue H-bond occupancy (direct):
+Residue               Occupancy  Mean dist  Mean angle
+-------------------------------------------------------
+ASP155                     1.00       3.09       166.9
+VAL156                     1.00       3.12       175.6
+SER159                     1.00       3.09       171.7
+THR160                     0.95       3.14       178.3
+ILE163                     0.04       3.28       147.4
+ILE206                     0.13       3.20       180.0
+LEU229                     0.15       3.34       141.8
+PHE234                     0.05       2.99       175.8
+VAL235                     0.65       3.23       160.6
+GLY238                     0.42       3.21       160.4
+SER239                     0.13       3.27       159.0
+SER242                     0.87       3.06       162.0
+TRP336                     0.36       3.28       149.5
+PHE339                     1.00       3.12       173.0
+PHE340                     0.68       3.18       175.8
+ASN343                     0.79       3.12       172.2
+VAL366                     1.00       3.07       174.1
+TYR370                     0.32       3.34       139.6
+
+Salt bridge (N1-H17...D77):
+  Distance: 2.86 +/- 0.12 A
+  Angle:    159.7 +/- 11.3 deg
+  H-bond occupancy: 99% (99/100 frames)
+
+Running water-mediated analysis (geometric proxy)...
+Water-mediated bridges per frame: 1.2 +/- 0.9 (range 0-3)
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_timeseries.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_occupancy.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_occupancy.png

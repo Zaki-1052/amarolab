@@ -1,0 +1,26 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336 (TRP PROC 209): chi1/chi2 computed
+F339 (PHE PROC 212): chi1/chi2 computed
+F340 (PHE PROC 213): chi1/chi2 computed
+F234 (PHE PROB 156): chi1/chi2 computed
+F243 (PHE PROB 165): chi1/chi2 computed
+Y370 (TYR PROC 243): chi1/chi2 computed
+D155 (ASP PROA 77): chi1/chi2 computed
+
+Residue     chi1 mean  chi1 std  chi2 mean  chi2 std  Rotamer  Trans
+--------------------------------------------------------------------
+W336            -65.7       7.5      106.6       9.3       g-      0
+F339            170.9       6.9       67.9       9.9        t      0
+F340            -75.0       7.3      -73.0       8.6       g-      0
+F234            179.8       8.2      -17.3     125.3        t      0
+F243            179.5       6.9       69.7       9.1        t      0
+Y370            -65.5       6.4      -28.1      10.8       g-      0
+D155           -177.3       8.6       26.5      14.9        t      0
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/rotamer_timeseries.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/rotamer_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/chi1_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/chi2_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/w336_toggle_switch.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase10_rotamers/rotamer_distributions.png
