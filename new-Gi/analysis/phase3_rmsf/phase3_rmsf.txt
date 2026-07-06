@@ -1,0 +1,59 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'altLocs' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'icodes' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'chainIDs' Using default value of ''
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'occupancies' Using default value of '1.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'elements' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'record_types' Using default value of 'ATOM'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1336: UserWarning: Found missing chainIDs. Corresponding atoms will use value of 'X'
+  warnings.warn(
+Receptor CA atoms: 262
+Trajectory aligned to frame 0 (in memory)
+No gaps in residue numbering
+
+Receptor RMSF: 0.32 - 3.00 A
+Mean RMSF: 0.75 A
+Median RMSF: 0.63 A
+
+Per-region summary:
+  TM1   (resid   1- 20): mean 0.66 +/- 0.17 A, range 0.43-1.09, n=20
+  ICL1  (resid  21- 29): mean 0.89 +/- 0.13 A, range 0.63-1.07, n=9
+  TM2   (resid  30- 58): mean 0.51 +/- 0.14 A, range 0.38-0.98, n=29
+  ECL1  (resid  59- 70): mean 0.90 +/- 0.16 A, range 0.65-1.14, n=12
+  TM3   (resid  71- 99): mean 0.51 +/- 0.15 A, range 0.32-0.87, n=29
+  ICL2  (resid 100-110): mean 1.01 +/- 0.18 A, range 0.77-1.28, n=11
+  TM4   (resid 111-138): mean 0.75 +/- 0.35 A, range 0.47-1.88, n=28
+  ECL2  (resid 139-158): mean 1.01 +/- 0.31 A, range 0.59-1.63, n=20
+  TM5   (resid 159-183): mean 0.56 +/- 0.15 A, range 0.44-1.18, n=25
+  ICL3c (resid 184-189): mean 1.36 +/- 0.76 A, range 0.87-3.00, n=6
+  TM6   (resid 190-217): mean 0.63 +/- 0.14 A, range 0.47-0.96, n=28
+  ECL3  (resid 218-227): mean 1.20 +/- 0.18 A, range 0.79-1.41, n=10
+  TM7   (resid 228-247): mean 0.56 +/- 0.12 A, range 0.44-0.85, n=20
+  H8    (resid 248-260): mean 1.12 +/- 0.36 A, range 0.66-1.68, n=13
+  Ct    (resid 261-262): mean 2.39 +/- 0.23 A, range 2.17-2.62, n=2
+
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/rmsf_profile.png
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/rmsf_data.csv
+B-factor PDB saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/receptor_rmsf_bfactor.pdb
+
+Top 5 most flexible residues:
+  resid 184 (ILE, PROF, ICL3c): 3.00 A
+  resid 262 (ARG, PROF, Ct): 2.62 A
+  resid 261 (SER, PROF, Ct): 2.17 A
+  resid 137 (GLN, PROE, TM4): 1.88 A
+  resid 258 (SER, PROF, H8): 1.68 A
+Top 5 most rigid residues:
+  resid 76 (ASP, PROE, TM3): 0.32 A
+  resid 77 (VAL, PROE, TM3): 0.33 A
+  resid 78 (LEU, PROE, TM3): 0.33 A
+  resid 79 (PHE, PROE, TM3): 0.34 A
+  resid 80 (SER, PROE, TM3): 0.36 A

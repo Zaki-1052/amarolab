@@ -1,0 +1,51 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Selections OK: psilocin N1, D76 OD1, D76 OD2 (1 atom each)
+
+Salt bridge (N1 — D76 / D155 min distance):
+  Range:  2.64 - 3.36 A
+  Mean:   2.87 +/- 0.14 A
+  Median: 2.84 A
+  Intact   (<3.5 A): 100/100 (100%)
+  Weakened (3.5-4.5):   0/100 (0%)
+  Marginal (4.5-6.0):   0/100 (0%)
+  Broken   (>6.0 A):   0/100 (0%)
+
+Binding pocket: 22 residues, 88 backbone atoms
+Ligand heavy atoms: 15
+
+Pocket residues:
+  PROE LEU  44  (lit LEU123)
+  PROE VAL  48  (lit VAL127)
+  PROE ILE  73  (lit ILE152)
+  PROE ASP  76  (lit ASP155)
+  PROE VAL  77  (lit VAL156)
+  PROE SER  80  (lit SER159)
+  PROE THR  81  (lit THR160)
+  PROE ILE  84  (lit ILE163)
+  PROE ILE 127  (lit ILE206)
+  PROE LEU 150  (lit LEU229)
+  PROE PHE 155  (lit PHE234)
+  PROE VAL 156  (lit VAL235)
+  PROE GLY 159  (lit GLY238)
+  PROE SER 160  (lit SER239)
+  PROE SER 163  (lit SER242)
+  PROF TRP 205  (lit TRP336)
+  PROF PHE 208  (lit PHE339)
+  PROF PHE 209  (lit PHE340)
+  PROF ASN 212  (lit ASN343)
+  PROF VAL 235  (lit VAL366)
+  PROF GLY 238  (lit GLY369)
+  PROF TYR 239  (lit TYR370)
+
+Ligand RMSD (heavy atoms, pocket-aligned):
+  Range:  0.00 - 1.04 A
+  Mean:   0.73 +/- 0.18 A
+  Median: 0.75 A
+
+Pocket backbone RMSD:
+  Range:  0.00 - 0.96 A
+  Mean:   0.72 +/- 0.13 A
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase4_psilocin/psilocin_data.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase4_psilocin/binding_pose.png

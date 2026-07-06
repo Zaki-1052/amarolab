@@ -1,0 +1,30 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336: 9 ring atoms selected
+F339: 6 ring atoms selected
+F340: 6 ring atoms selected
+F234: 6 ring atoms selected
+F243: 6 ring atoms selected
+Y370: 6 ring atoms selected
+Psilocin: 9 ring atoms selected
+  frame 20/100
+  frame 40/100
+  frame 60/100
+  frame 80/100
+  frame 100/100
+
+Ring          Total (°)  Rotations Mean Δ (°)  Max Δ (°)  Std Δ (°)
+------------------------------------------------------------------
+W336              879.0       2.44       8.88      24.64       4.47
+F339             1300.1       3.61      13.13      34.58       6.99
+F340             1032.5       2.87      10.43      22.01       5.02
+F234             2595.6       7.21      26.22      89.74      20.16
+F243              972.6       2.70       9.82      25.85       4.92
+Y370             1169.0       3.25      11.81      44.86       8.36
+Psilocin          964.5       2.68       9.74      28.00       5.67
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_rotations.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/cumulative_rotations.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/rotation_summary.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/angular_changes.png

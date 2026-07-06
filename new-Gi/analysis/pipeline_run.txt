@@ -1,0 +1,586 @@
+
+============================================
+  9LL8 (Gi-coupled) Analysis Pipeline
+============================================
+
+Working directory: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis
+Started: Sun Jul  5 18:39:00 PDT 2026
+
+──────────────────────────────────────────
+  phase2_rmsd
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Receptor RMSD: 0.00 - 1.58 A
+G protein RMSD: 0.00 - 2.96 A
+Saved to /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase2_rmsd/
+
+  -> phase2_rmsd completed in 34s
+  -> Log: phase2_rmsd/phase2_rmsd.txt
+
+──────────────────────────────────────────
+  phase3_rmsf
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'altLocs' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'icodes' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'chainIDs' Using default value of ''
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'occupancies' Using default value of '1.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'elements' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'record_types' Using default value of 'ATOM'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1336: UserWarning: Found missing chainIDs. Corresponding atoms will use value of 'X'
+  warnings.warn(
+Receptor CA atoms: 262
+Trajectory aligned to frame 0 (in memory)
+No gaps in residue numbering
+
+Receptor RMSF: 0.32 - 3.00 A
+Mean RMSF: 0.75 A
+Median RMSF: 0.63 A
+
+Per-region summary:
+  TM1   (resid   1- 20): mean 0.66 +/- 0.17 A, range 0.43-1.09, n=20
+  ICL1  (resid  21- 29): mean 0.89 +/- 0.13 A, range 0.63-1.07, n=9
+  TM2   (resid  30- 58): mean 0.51 +/- 0.14 A, range 0.38-0.98, n=29
+  ECL1  (resid  59- 70): mean 0.90 +/- 0.16 A, range 0.65-1.14, n=12
+  TM3   (resid  71- 99): mean 0.51 +/- 0.15 A, range 0.32-0.87, n=29
+  ICL2  (resid 100-110): mean 1.01 +/- 0.18 A, range 0.77-1.28, n=11
+  TM4   (resid 111-138): mean 0.75 +/- 0.35 A, range 0.47-1.88, n=28
+  ECL2  (resid 139-158): mean 1.01 +/- 0.31 A, range 0.59-1.63, n=20
+  TM5   (resid 159-183): mean 0.56 +/- 0.15 A, range 0.44-1.18, n=25
+  ICL3c (resid 184-189): mean 1.36 +/- 0.76 A, range 0.87-3.00, n=6
+  TM6   (resid 190-217): mean 0.63 +/- 0.14 A, range 0.47-0.96, n=28
+  ECL3  (resid 218-227): mean 1.20 +/- 0.18 A, range 0.79-1.41, n=10
+  TM7   (resid 228-247): mean 0.56 +/- 0.12 A, range 0.44-0.85, n=20
+  H8    (resid 248-260): mean 1.12 +/- 0.36 A, range 0.66-1.68, n=13
+  Ct    (resid 261-262): mean 2.39 +/- 0.23 A, range 2.17-2.62, n=2
+
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/rmsf_profile.png
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/rmsf_data.csv
+B-factor PDB saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase3_rmsf/receptor_rmsf_bfactor.pdb
+
+Top 5 most flexible residues:
+  resid 184 (ILE, PROF, ICL3c): 3.00 A
+  resid 262 (ARG, PROF, Ct): 2.62 A
+  resid 261 (SER, PROF, Ct): 2.17 A
+  resid 137 (GLN, PROE, TM4): 1.88 A
+  resid 258 (SER, PROF, H8): 1.68 A
+Top 5 most rigid residues:
+  resid 76 (ASP, PROE, TM3): 0.32 A
+  resid 77 (VAL, PROE, TM3): 0.33 A
+  resid 78 (LEU, PROE, TM3): 0.33 A
+  resid 79 (PHE, PROE, TM3): 0.34 A
+  resid 80 (SER, PROE, TM3): 0.36 A
+
+  -> phase3_rmsf completed in 41s
+  -> Log: phase3_rmsf/phase3_rmsf.txt
+
+──────────────────────────────────────────
+  phase4_psilocin
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Selections OK: psilocin N1, D76 OD1, D76 OD2 (1 atom each)
+
+Salt bridge (N1 — D76 / D155 min distance):
+  Range:  2.64 - 3.36 A
+  Mean:   2.87 +/- 0.14 A
+  Median: 2.84 A
+  Intact   (<3.5 A): 100/100 (100%)
+  Weakened (3.5-4.5):   0/100 (0%)
+  Marginal (4.5-6.0):   0/100 (0%)
+  Broken   (>6.0 A):   0/100 (0%)
+
+Binding pocket: 22 residues, 88 backbone atoms
+Ligand heavy atoms: 15
+
+Pocket residues:
+  PROE LEU  44  (lit LEU123)
+  PROE VAL  48  (lit VAL127)
+  PROE ILE  73  (lit ILE152)
+  PROE ASP  76  (lit ASP155)
+  PROE VAL  77  (lit VAL156)
+  PROE SER  80  (lit SER159)
+  PROE THR  81  (lit THR160)
+  PROE ILE  84  (lit ILE163)
+  PROE ILE 127  (lit ILE206)
+  PROE LEU 150  (lit LEU229)
+  PROE PHE 155  (lit PHE234)
+  PROE VAL 156  (lit VAL235)
+  PROE GLY 159  (lit GLY238)
+  PROE SER 160  (lit SER239)
+  PROE SER 163  (lit SER242)
+  PROF TRP 205  (lit TRP336)
+  PROF PHE 208  (lit PHE339)
+  PROF PHE 209  (lit PHE340)
+  PROF ASN 212  (lit ASN343)
+  PROF VAL 235  (lit VAL366)
+  PROF GLY 238  (lit GLY369)
+  PROF TYR 239  (lit TYR370)
+
+Ligand RMSD (heavy atoms, pocket-aligned):
+  Range:  0.00 - 1.04 A
+  Mean:   0.73 +/- 0.18 A
+  Median: 0.75 A
+
+Pocket backbone RMSD:
+  Range:  0.00 - 0.96 A
+  Mean:   0.72 +/- 0.13 A
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase4_psilocin/psilocin_data.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase4_psilocin/binding_pose.png
+
+  -> phase4_psilocin completed in 26s
+  -> Log: phase4_psilocin/phase4_psilocin.txt
+
+──────────────────────────────────────────
+  phase5_lipid_order
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Loaded: 100 frames, 270555 atoms
+Membrane midplane Z = 85.6 A
+Leaflets: 123 upper, 159 lower
+
+Discovering C-H pairs...
+  POPC sn-1 (palmitoyl 16:0): 15 carbons, 48 lipids (30U/18L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPC sn-2 (oleoyl 18:1): 17 carbons, 48 lipids (30U/18L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPE sn-1 (palmitoyl 16:0): 15 carbons, 15 lipids (6U/9L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  POPE sn-2 (oleoyl 18:1): 17 carbons, 15 lipids (6U/9L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3]
+  SDPE sn-1 (stearoyl 18:0): 17 carbons, 54 lipids (18U/36L), H/carbon: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+  SDPE sn-2 (DHA 22:6): 21 carbons, 54 lipids (18U/36L), H/carbon: [2, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 3]
+
+Computing S_CD (100 frames, 6 chains)...
+  frame 25/100
+  frame 50/100
+  frame 75/100
+  frame 100/100
+Done.
+
+POPC sn-1 (palmitoyl 16:0)  (48 lipids: 30U / 18L)
+  |S_CD| range: 0.032 - 0.317, mean: 0.235
+POPC sn-2 (oleoyl 18:1)  (48 lipids: 30U / 18L)
+  |S_CD| range: 0.043 - 0.306, mean: 0.185
+POPE sn-1 (palmitoyl 16:0)  (15 lipids: 6U / 9L)
+  |S_CD| range: 0.044 - 0.320, mean: 0.247
+POPE sn-2 (oleoyl 18:1)  (15 lipids: 6U / 9L)
+  |S_CD| range: 0.050 - 0.281, mean: 0.185
+SDPE sn-1 (stearoyl 18:0)  (54 lipids: 18U / 36L)
+  |S_CD| range: 0.024 - 0.318, mean: 0.224
+SDPE sn-2 (DHA 22:6)  (54 lipids: 18U / 36L)
+  |S_CD| range: 0.009 - 0.152, mean: 0.055
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase5_lipid_order/scd_data.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase5_lipid_order/scd_POPC.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase5_lipid_order/scd_POPE.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase5_lipid_order/scd_SDPE.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase5_lipid_order/scd_POPC_leaflets.png
+
+  -> phase5_lipid_order completed in 23s
+  -> Log: phase5_lipid_order/phase5_lipid_order.txt
+
+──────────────────────────────────────────
+  phase6_contacts
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Receptor: 4249 atoms, 262 residues
+Lipids:   60840 atoms, 609 residues
+Frames: 100, cutoff: 4.0 A
+
+Lipid species (16): CHL1, DOPC, GalCer, PAPC, PAPE, PAPS, POPC, POPE, POPI, POPS, PSM, SAPI, SDPC, SDPE, SDPS, SSM
+Receptor segments: ['PROE', 'PROF']
+
+  Frame 0/100...  Frame 10/100...  Frame 20/100...  Frame 30/100...  Frame 40/100...  Frame 50/100...  Frame 60/100...  Frame 70/100...  Frame 80/100...  Frame 90/100...
+Done. 611 unique (residue, species) contacts.
+
+========================================================
+Analysis 1: contacts by lipid species
+========================================================
+Species      Total freq    N_mol    Per-mol
+--------------------------------------------
+CHL1               65.7      279       0.24
+PAPE               58.2       36       1.62
+POPC               57.2       48       1.19
+SDPE               31.7       54       0.59
+SDPS               22.9       15       1.53
+PAPS               11.4        9       1.26
+SAPI                9.9        9       1.10
+GalCer              9.2       24       0.38
+POPS                4.3        9       0.48
+PAPC                3.7       24       0.15
+PSM                 2.5       27       0.09
+SSM                 1.2       12       0.10
+POPI                0.1        6       0.02
+POPE                0.1       15       0.00
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contacts_by_species.png
+
+========================================================
+Analysis 2: per-residue contact profile
+========================================================
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contacts_per_residue.png
+
+Top 20 most lipid-contacted residues:
+ Resid Seg    AA      Lit#    Total
+-----------------------------------
+     1 PROE   LEU       80     5.44
+     7 PROE   ILE       86     4.82
+    46 PROE   PHE      125     4.41
+    47 PROE   LEU      126     3.28
+     4 PROE   VAL       83     3.18
+    14 PROE   ILE       93     3.09
+   176 PROE   PHE      255     3.04
+   122 PROE   THR      201     3.01
+    18 PROE   MET       97     2.99
+   115 PROE   LEU      194     2.95
+    43 PROE   LEU      122     2.93
+   240 PROF   LEU      371     2.90
+   169 PROE   THR      248     2.88
+   237 PROF   ILE      368     2.86
+    22 PROE   LEU      101     2.71
+    54 PROE   LEU      133     2.68
+   180 PROE   LYS      259     2.67
+   230 PROF   LEU      361     2.65
+    50 PROE   PRO      129     2.60
+    10 PROE   ILE       89     2.59
+
+Bottom 10 (least lipid-contacted):
+ Resid Seg    AA      Lit#    Total
+-----------------------------------
+   113 PROE   ALA      192     0.01
+   102 PROE   ILE      181     0.01
+    90 PROE   ILE      169     0.01
+   185 PROF   SER      316     0.01
+   163 PROE   SER      242     0.01
+   160 PROE   SER      239     0.02
+    69 PROE   CYS      148     0.03
+    70 PROE   ALA      149     0.03
+   131 PROE   ILE      210     0.03
+   197 PROF   VAL      328     0.03
+
+========================================================
+Analysis 3: cholesterol contacts
+========================================================
+Residues contacting CHL1: 110
+
+Top 20 cholesterol-contacted residues:
+ Resid Seg    AA      Lit#     Freq
+-----------------------------------
+     1 PROE   LEU       80     1.00
+    18 PROE   MET       97     1.00
+    54 PROE   LEU      133     1.00
+    95 PROE   TYR      174     1.00
+   100 PROE   ASN      179     1.00
+   111 PROE   THR      190     1.00
+   114 PROE   PHE      193     1.00
+   115 PROE   LEU      194     1.00
+   118 PROE   ILE      197     1.00
+   122 PROE   THR      201     1.00
+   126 PROE   GLY      205     1.00
+   129 PROE   MET      208     1.00
+   132 PROE   PRO      211     1.00
+   133 PROE   VAL      212     1.00
+   169 PROE   THR      248     1.00
+   176 PROE   PHE      255     1.00
+   180 PROE   LYS      259     1.00
+   214 PROF   MET      345     1.00
+   217 PROF   ILE      348     1.00
+   230 PROF   LEU      361     1.00
+
+Persistent CHL1 contacts (freq >= 0.9): 44 residues
+  LEU80 (resid 1, PROE, freq 1.00)
+  MET97 (resid 18, PROE, freq 1.00)
+  LEU133 (resid 54, PROE, freq 1.00)
+  TYR174 (resid 95, PROE, freq 1.00)
+  ASN179 (resid 100, PROE, freq 1.00)
+  THR190 (resid 111, PROE, freq 1.00)
+  PHE193 (resid 114, PROE, freq 1.00)
+  LEU194 (resid 115, PROE, freq 1.00)
+  ILE197 (resid 118, PROE, freq 1.00)
+  THR201 (resid 122, PROE, freq 1.00)
+  GLY205 (resid 126, PROE, freq 1.00)
+  MET208 (resid 129, PROE, freq 1.00)
+  PRO211 (resid 132, PROE, freq 1.00)
+  VAL212 (resid 133, PROE, freq 1.00)
+  THR248 (resid 169, PROE, freq 1.00)
+  PHE255 (resid 176, PROE, freq 1.00)
+  LYS259 (resid 180, PROE, freq 1.00)
+  MET345 (resid 214, PROF, freq 1.00)
+  ILE348 (resid 217, PROF, freq 1.00)
+  LEU361 (resid 230, PROF, freq 1.00)
+  VAL364 (resid 233, PROF, freq 1.00)
+  THR81 (resid 2, PROE, freq 0.99)
+  LEU101 (resid 22, PROE, freq 0.99)
+  TYR137 (resid 58, PROE, freq 0.99)
+  LEU171 (resid 92, PROE, freq 0.99)
+  VAL175 (resid 96, PROE, freq 0.99)
+  PHE213 (resid 134, PROE, freq 0.99)
+  ILE249 (resid 170, PROE, freq 0.99)
+  ILE252 (resid 173, PROE, freq 0.99)
+  ILE368 (resid 237, PROF, freq 0.99)
+  GLN178 (resid 99, PROE, freq 0.98)
+  GLN216 (resid 137, PROE, freq 0.98)
+  VAL204 (resid 125, PROE, freq 0.97)
+  PRO209 (resid 130, PROE, freq 0.96)
+  VAL357 (resid 226, PROF, freq 0.96)
+  ILE93 (resid 14, PROE, freq 0.96)
+  LEU215 (resid 136, PROE, freq 0.95)
+  PRO129 (resid 50, PROE, freq 0.94)
+  CYS349 (resid 218, PROF, freq 0.93)
+  ILE202 (resid 123, PROE, freq 0.92)
+  LEU371 (resid 240, PROF, freq 0.91)
+  ILE89 (resid 10, PROE, freq 0.91)
+  ILE86 (resid 7, PROE, freq 0.90)
+  TRP367 (resid 236, PROF, freq 0.90)
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/cholesterol_contacts.png
+
+CSV: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contact_data.csv (611 rows)
+
+  -> phase6_contacts completed in 24s
+  -> Log: phase6_contacts/phase6_contacts.txt
+
+──────────────────────────────────────────
+  phase7_summary
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'altLocs' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'icodes' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'chainIDs' Using default value of ''
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'occupancies' Using default value of '1.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'tempfactors' Using default value of '0.0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'elements' Using default value of ' '
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'record_types' Using default value of 'ATOM'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1282: UserWarning: Found no information for attr: 'formalcharges' Using default value of '0'
+  warnings.warn(
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/PDB.py:1336: UserWarning: Found missing chainIDs. Corresponding atoms will use value of 'X'
+  warnings.warn(
+Mean receptor RMSD: 1.18 A
+Representative frame: 43 (t = 4.3 ns, RMSD = 1.17 A)
+Snapshot 1: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase7_summary/5ht2ar_Gi_membrane_snapshot.pdb (65121 atoms)
+Snapshot 2: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase7_summary/5ht2ar_Gi_receptor_snapshot.pdb (4249 atoms)
+Snapshot 3: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase7_summary/5ht2ar_Gi_receptor_psilocin.pdb (4281 atoms)
+
+  -> phase7_summary completed in 42s
+  -> Log: phase7_summary/phase7_summary.txt
+
+──────────────────────────────────────────
+  phase8_hbonds
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Binding pocket: 22 residues
+Protein donor-H pairs: 30 (22 BB, 8 SC)
+Protein acceptor atoms: 30 (22 BB, 8 SC)
+  frame 20/100: 2 H-bonds
+  frame 40/100: 3 H-bonds
+  frame 60/100: 2 H-bonds
+  frame 80/100: 1 H-bonds
+  frame 100/100: 2 H-bonds
+
+Total H-bond observations: 225
+
+Unique H-bond types: 4
+
+Group        Type Label                                           Occ   Dist  Angle
+----------------------------------------------------------------------------------
+amine        SC   N1-H17 → ASP155:OD1                             93%   2.96  154.4
+amine        SC   N1-H17 → ASP155:OD2                             61%   2.98  147.0
+indole NH    SC   N2-H13 → SER242:OG                              54%   3.09  146.2
+indole NH    SC   N2-H13 → THR160:OG1                             17%   3.09  141.0
+
+H-bonds per frame: 2.2 +/- 0.6 (range 1-3)
+  amine       : 1.5 +/- 0.5 (range 1-2)
+  hydroxyl    : 0.0 +/- 0.0 (range 0-0)
+  indole NH   : 0.7 +/- 0.5 (range 0-1)
+
+Residue       BB occ  SC occ Groups
+-------------------------------------------------------
+ASP155           0%    100%   amine
+THR160           0%     17%   indole NH
+SER242           0%     54%   indole NH
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_detail_residues.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_detail_bonds.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_detail_timeseries.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_existence_map.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_by_group.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase8_hbonds/hbond_residue_detail.png
+
+  -> phase8_hbonds completed in 10s
+  -> Log: phase8_hbonds/phase8_hbonds.txt
+
+──────────────────────────────────────────
+  phase9_aromatics
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336: 9 ring atoms selected
+F339: 6 ring atoms selected
+F340: 6 ring atoms selected
+F234: 6 ring atoms selected
+F243: 6 ring atoms selected
+Y370: 6 ring atoms selected
+Psilocin: 9 ring atoms selected
+  frame 20/100
+  frame 40/100
+  frame 60/100
+  frame 80/100
+  frame 100/100
+
+Ring          Total (°)  Rotations Mean Δ (°)  Max Δ (°)  Std Δ (°)
+------------------------------------------------------------------
+W336              879.0       2.44       8.88      24.64       4.47
+F339             1300.1       3.61      13.13      34.58       6.99
+F340             1032.5       2.87      10.43      22.01       5.02
+F234             2595.6       7.21      26.22      89.74      20.16
+F243              972.6       2.70       9.82      25.85       4.92
+Y370             1169.0       3.25      11.81      44.86       8.36
+Psilocin          964.5       2.68       9.74      28.00       5.67
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_rotations.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/cumulative_rotations.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/rotation_summary.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase9_aromatics/angular_changes.png
+
+  -> phase9_aromatics completed in 18s
+  -> Log: phase9_aromatics/phase9_aromatics.txt
+
+──────────────────────────────────────────
+  phase10_rotamers
+──────────────────────────────────────────
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336 (TRP PROF 205): chi1/chi2 computed
+F339 (PHE PROF 208): chi1/chi2 computed
+F340 (PHE PROF 209): chi1/chi2 computed
+F234 (PHE PROE 155): chi1/chi2 computed
+F243 (PHE PROE 164): chi1/chi2 computed
+Y370 (TYR PROF 239): chi1/chi2 computed
+D155 (ASP PROE 76): chi1/chi2 computed
+
+Residue     chi1 mean  chi1 std  chi2 mean  chi2 std  Rotamer  Trans
+--------------------------------------------------------------------
+W336            -66.8       7.7      106.9       9.5       g-      0
+F339            176.8       6.2       74.1      10.9        t      0
+F340            -69.7       8.5      113.5       7.8       g-      0
+F234           -162.8      32.0      -59.4     111.3        t      4
+F243           -179.1       7.2       71.8       9.4        t      0
+Y370            -66.8       5.9      -29.3      11.2       g-      0
+D155           -179.3       8.2       31.3      15.0        t      0
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_timeseries.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/chi1_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/chi2_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/w336_toggle_switch.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_distributions.png
+
+  -> phase10_rotamers completed in 46s
+  -> Log: phase10_rotamers/phase10_rotamers.txt
+
+──────────────────────────────────────────
+  crossphase
+──────────────────────────────────────────
+=================================================================
+CRAC/CARC cholesterol recognition motif scan
+=================================================================
+Scanned 262 receptor residues in 2 contiguous blocks
+  Block 1: PROE resids 1-183 (lit 80-262)
+  Block 2: PROF resids 184-262 (lit 315-393)
+
+CRAC motif: (L/V)-X1-5-(Y)-X1-5-(K/R)
+Raw matches: 8, unique by central Y: 5
+
+  L136-X0-Y137-X2-R140  (TM2)  [L][Y]GY[R] * Y contacts CHL1 *
+    L136 CHL1=0.86  Y137 CHL1=0.99  R140 CHL1=0.00
+  L136-X2-Y139-X0-R140  (ECL1)  [L]YG[Y][R] * Y contacts CHL1 *
+    L136 CHL1=0.86  Y139 CHL1=0.89  R140 CHL1=0.00
+  V251-X2-Y254-X4-K259  (TM5)  [V]IT[Y]FLTI[K]
+    V251 CHL1=0.21  Y254 CHL1=0.01  K259 CHL1=1.00
+  V379-X0-Y380-X4-K385  (H8)  [V][Y]TLFN[K]
+    V379 CHL1=0.00  Y380 CHL1=0.00  K385 CHL1=0.00
+  L382-X4-Y387-X0-R388  (H8)  [L]FNKT[Y][R]
+    L382 CHL1=0.00  Y387 CHL1=0.00  R388 CHL1=0.00
+
+CARC motif (reverse): (K/R)-X1-5-(Y/F)-X1-5-(L/V)
+Raw matches: 3, unique by central Y/F: 2
+
+  R173-X0-Y174-X0-V175  (TM3)  [R][Y][V] * Y/F contacts CHL1 *
+    R173 CHL1=0.00  Y174 CHL1=1.00  V175 CHL1=0.99
+  K191-X1-F193-X0-L194  (TM4)  [K]A[F][L] * Y/F contacts CHL1 *
+    K191 CHL1=0.00  F193 CHL1=1.00  L194 CHL1=1.00
+
+=================================================================
+RMSF vs total lipid contact frequency
+=================================================================
+Residues with lipid contacts: 192
+Residues with zero contacts: 70
+
+Spearman correlation (all 262 residues): rho=0.003, p=9.58e-01
+Spearman correlation (contacting only):  rho=-0.253, p=4.03e-04
+Spearman (RMSF vs CHL1 only):            rho=0.006, p=9.27e-01
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/rmsf_vs_contacts.png
+
+Per-region means:
+Region       RMSF   Contacts     CHL1     n
+-------------------------------------------
+TM1          0.66       1.97     0.40    20
+TM2          0.51       1.16     0.24    29
+TM3          0.51       0.77     0.17    29
+ICL1         0.89       0.66     0.14     9
+ICL2         1.01       0.67     0.15    11
+ECL1         0.90       0.95     0.18    12
+ECL2         1.01       0.30     0.00    20
+TM4          0.75       1.48     0.59    28
+TM5          0.56       1.37     0.36    25
+ICL3c        1.36       0.41     0.00     6
+TM6          0.63       1.03     0.16    28
+ECL3         1.20       1.27     0.42    10
+TM7          0.56       1.05     0.32    20
+H8           1.12       0.65     0.00    13
+Ct           2.39       1.40     0.00     2
+
+  -> crossphase completed in 7s
+  -> Log: ./crossphase.txt
+
+============================================
+  Pipeline complete
+============================================
+
+Total wall time: 273s (4m 33s)
+Finished: Sun Jul  5 18:43:33 PDT 2026
+
+Output summary:
+
+  phase2_rmsd: 1 PNG, 1 CSV, 0 PDB
+  phase3_rmsf: 1 PNG, 1 CSV, 1 PDB
+  phase4_psilocin: 1 PNG, 1 CSV, 0 PDB
+  phase5_lipid_order: 4 PNG, 1 CSV, 0 PDB
+  phase6_contacts: 3 PNG, 1 CSV, 0 PDB
+  phase7_summary: 0 PNG, 0 CSV, 3 PDB
+  phase8_hbonds: 3 PNG, 3 CSV, 0 PDB
+  phase9_aromatics: 3 PNG, 2 CSV, 0 PDB
+  phase10_rotamers: 4 PNG, 2 CSV, 0 PDB
+  crossphase: 1 PNG
+

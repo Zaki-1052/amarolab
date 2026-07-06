@@ -1,0 +1,155 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Receptor: 4249 atoms, 262 residues
+Lipids:   60840 atoms, 609 residues
+Frames: 100, cutoff: 4.0 A
+
+Lipid species (16): CHL1, DOPC, GalCer, PAPC, PAPE, PAPS, POPC, POPE, POPI, POPS, PSM, SAPI, SDPC, SDPE, SDPS, SSM
+Receptor segments: ['PROE', 'PROF']
+
+  Frame 0/100...  Frame 10/100...  Frame 20/100...  Frame 30/100...  Frame 40/100...  Frame 50/100...  Frame 60/100...  Frame 70/100...  Frame 80/100...  Frame 90/100...
+Done. 611 unique (residue, species) contacts.
+
+========================================================
+Analysis 1: contacts by lipid species
+========================================================
+Species      Total freq    N_mol    Per-mol
+--------------------------------------------
+CHL1               65.7      279       0.24
+PAPE               58.2       36       1.62
+POPC               57.2       48       1.19
+SDPE               31.7       54       0.59
+SDPS               22.9       15       1.53
+PAPS               11.4        9       1.26
+SAPI                9.9        9       1.10
+GalCer              9.2       24       0.38
+POPS                4.3        9       0.48
+PAPC                3.7       24       0.15
+PSM                 2.5       27       0.09
+SSM                 1.2       12       0.10
+POPI                0.1        6       0.02
+POPE                0.1       15       0.00
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contacts_by_species.png
+
+========================================================
+Analysis 2: per-residue contact profile
+========================================================
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contacts_per_residue.png
+
+Top 20 most lipid-contacted residues:
+ Resid Seg    AA      Lit#    Total
+-----------------------------------
+     1 PROE   LEU       80     5.44
+     7 PROE   ILE       86     4.82
+    46 PROE   PHE      125     4.41
+    47 PROE   LEU      126     3.28
+     4 PROE   VAL       83     3.18
+    14 PROE   ILE       93     3.09
+   176 PROE   PHE      255     3.04
+   122 PROE   THR      201     3.01
+    18 PROE   MET       97     2.99
+   115 PROE   LEU      194     2.95
+    43 PROE   LEU      122     2.93
+   240 PROF   LEU      371     2.90
+   169 PROE   THR      248     2.88
+   237 PROF   ILE      368     2.86
+    22 PROE   LEU      101     2.71
+    54 PROE   LEU      133     2.68
+   180 PROE   LYS      259     2.67
+   230 PROF   LEU      361     2.65
+    50 PROE   PRO      129     2.60
+    10 PROE   ILE       89     2.59
+
+Bottom 10 (least lipid-contacted):
+ Resid Seg    AA      Lit#    Total
+-----------------------------------
+   113 PROE   ALA      192     0.01
+   102 PROE   ILE      181     0.01
+    90 PROE   ILE      169     0.01
+   185 PROF   SER      316     0.01
+   163 PROE   SER      242     0.01
+   160 PROE   SER      239     0.02
+    69 PROE   CYS      148     0.03
+    70 PROE   ALA      149     0.03
+   131 PROE   ILE      210     0.03
+   197 PROF   VAL      328     0.03
+
+========================================================
+Analysis 3: cholesterol contacts
+========================================================
+Residues contacting CHL1: 110
+
+Top 20 cholesterol-contacted residues:
+ Resid Seg    AA      Lit#     Freq
+-----------------------------------
+     1 PROE   LEU       80     1.00
+    18 PROE   MET       97     1.00
+    54 PROE   LEU      133     1.00
+    95 PROE   TYR      174     1.00
+   100 PROE   ASN      179     1.00
+   111 PROE   THR      190     1.00
+   114 PROE   PHE      193     1.00
+   115 PROE   LEU      194     1.00
+   118 PROE   ILE      197     1.00
+   122 PROE   THR      201     1.00
+   126 PROE   GLY      205     1.00
+   129 PROE   MET      208     1.00
+   132 PROE   PRO      211     1.00
+   133 PROE   VAL      212     1.00
+   169 PROE   THR      248     1.00
+   176 PROE   PHE      255     1.00
+   180 PROE   LYS      259     1.00
+   214 PROF   MET      345     1.00
+   217 PROF   ILE      348     1.00
+   230 PROF   LEU      361     1.00
+
+Persistent CHL1 contacts (freq >= 0.9): 44 residues
+  LEU80 (resid 1, PROE, freq 1.00)
+  MET97 (resid 18, PROE, freq 1.00)
+  LEU133 (resid 54, PROE, freq 1.00)
+  TYR174 (resid 95, PROE, freq 1.00)
+  ASN179 (resid 100, PROE, freq 1.00)
+  THR190 (resid 111, PROE, freq 1.00)
+  PHE193 (resid 114, PROE, freq 1.00)
+  LEU194 (resid 115, PROE, freq 1.00)
+  ILE197 (resid 118, PROE, freq 1.00)
+  THR201 (resid 122, PROE, freq 1.00)
+  GLY205 (resid 126, PROE, freq 1.00)
+  MET208 (resid 129, PROE, freq 1.00)
+  PRO211 (resid 132, PROE, freq 1.00)
+  VAL212 (resid 133, PROE, freq 1.00)
+  THR248 (resid 169, PROE, freq 1.00)
+  PHE255 (resid 176, PROE, freq 1.00)
+  LYS259 (resid 180, PROE, freq 1.00)
+  MET345 (resid 214, PROF, freq 1.00)
+  ILE348 (resid 217, PROF, freq 1.00)
+  LEU361 (resid 230, PROF, freq 1.00)
+  VAL364 (resid 233, PROF, freq 1.00)
+  THR81 (resid 2, PROE, freq 0.99)
+  LEU101 (resid 22, PROE, freq 0.99)
+  TYR137 (resid 58, PROE, freq 0.99)
+  LEU171 (resid 92, PROE, freq 0.99)
+  VAL175 (resid 96, PROE, freq 0.99)
+  PHE213 (resid 134, PROE, freq 0.99)
+  ILE249 (resid 170, PROE, freq 0.99)
+  ILE252 (resid 173, PROE, freq 0.99)
+  ILE368 (resid 237, PROF, freq 0.99)
+  GLN178 (resid 99, PROE, freq 0.98)
+  GLN216 (resid 137, PROE, freq 0.98)
+  VAL204 (resid 125, PROE, freq 0.97)
+  PRO209 (resid 130, PROE, freq 0.96)
+  VAL357 (resid 226, PROF, freq 0.96)
+  ILE93 (resid 14, PROE, freq 0.96)
+  LEU215 (resid 136, PROE, freq 0.95)
+  PRO129 (resid 50, PROE, freq 0.94)
+  CYS349 (resid 218, PROF, freq 0.93)
+  ILE202 (resid 123, PROE, freq 0.92)
+  LEU371 (resid 240, PROF, freq 0.91)
+  ILE89 (resid 10, PROE, freq 0.91)
+  ILE86 (resid 7, PROE, freq 0.90)
+  TRP367 (resid 236, PROF, freq 0.90)
+
+Plot: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/cholesterol_contacts.png
+
+CSV: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase6_contacts/contact_data.csv (611 rows)

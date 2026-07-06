@@ -1,0 +1,4 @@
+resname,lit_resid,segid,resid,bb_occupancy,sc_occupancy,psi_groups
+ASP,155,PROE,76,0.0,1.0,amine
+THR,160,PROE,81,0.0,0.17,indole NH
+SER,242,PROE,163,0.0,0.54,indole NH

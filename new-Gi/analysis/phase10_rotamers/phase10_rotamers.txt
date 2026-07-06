@@ -1,0 +1,26 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336 (TRP PROF 205): chi1/chi2 computed
+F339 (PHE PROF 208): chi1/chi2 computed
+F340 (PHE PROF 209): chi1/chi2 computed
+F234 (PHE PROE 155): chi1/chi2 computed
+F243 (PHE PROE 164): chi1/chi2 computed
+Y370 (TYR PROF 239): chi1/chi2 computed
+D155 (ASP PROE 76): chi1/chi2 computed
+
+Residue     chi1 mean  chi1 std  chi2 mean  chi2 std  Rotamer  Trans
+--------------------------------------------------------------------
+W336            -66.8       7.7      106.9       9.5       g-      0
+F339            176.8       6.2       74.1      10.9        t      0
+F340            -69.7       8.5      113.5       7.8       g-      0
+F234           -162.8      32.0      -59.4     111.3        t      4
+F243           -179.1       7.2       71.8       9.4        t      0
+Y370            -66.8       5.9      -29.3      11.2       g-      0
+D155           -179.3       8.2       31.3      15.0        t      0
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_timeseries.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_summary.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/chi1_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/chi2_timeseries.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/w336_toggle_switch.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/new-Gi/analysis/phase10_rotamers/rotamer_distributions.png

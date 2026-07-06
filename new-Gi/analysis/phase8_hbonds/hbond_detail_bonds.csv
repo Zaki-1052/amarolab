@@ -1,0 +1,5 @@
+psi_group,partner_type,label,occupancy,mean_distance,mean_angle,partner_resname,partner_lit_resid
+amine,SC,N1-H17 → ASP155:OD1,0.93,2.96,154.4,ASP,155
+amine,SC,N1-H17 → ASP155:OD2,0.61,2.98,147.0,ASP,155
+indole NH,SC,N2-H13 → SER242:OG,0.54,3.09,146.2,SER,242
+indole NH,SC,N2-H13 → THR160:OG1,0.17,3.09,141.0,THR,160
