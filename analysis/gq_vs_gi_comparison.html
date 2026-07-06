@@ -1,0 +1,866 @@
+<title>5-HT2A Receptor: Gq (9AS8) vs Gi (9LL8) MD Comparison</title>
+<style>
+  @font-face {
+    font-family: 'Charter';
+    src: local('Charter'), local('Georgia');
+    font-display: swap;
+  }
+
+  :root {
+    --gq: #2B7A78;
+    --gq-bg: #e8f4f3;
+    --gi: #B85842;
+    --gi-bg: #fbeae6;
+    --ground: #FAFAF7;
+    --surface: #FFFFFF;
+    --border: #D8D5CE;
+    --text: #2C2A26;
+    --text-secondary: #6B6860;
+    --text-tertiary: #9B9890;
+    --highlight-bg: #FFF8E1;
+    --highlight-border: #E6C84D;
+    --code-bg: #F0EEEA;
+    --table-stripe: rgba(0,0,0,0.025);
+    --delta-pos: #2B7A78;
+    --delta-neg: #B85842;
+    --section-rule: #C8C4BB;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --gq: #5EC4C0;
+      --gq-bg: #1a3332;
+      --gi: #E8907C;
+      --gi-bg: #3a2420;
+      --ground: #1C1B19;
+      --surface: #26251F;
+      --border: #3D3B35;
+      --text: #E0DDD6;
+      --text-secondary: #A09D95;
+      --text-tertiary: #706D65;
+      --highlight-bg: #33301A;
+      --highlight-border: #8A7A30;
+      --code-bg: #2E2D28;
+      --table-stripe: rgba(255,255,255,0.03);
+      --delta-pos: #5EC4C0;
+      --delta-neg: #E8907C;
+      --section-rule: #3D3B35;
+    }
+  }
+  :root[data-theme="dark"] {
+    --gq: #5EC4C0;
+    --gq-bg: #1a3332;
+    --gi: #E8907C;
+    --gi-bg: #3a2420;
+    --ground: #1C1B19;
+    --surface: #26251F;
+    --border: #3D3B35;
+    --text: #E0DDD6;
+    --text-secondary: #A09D95;
+    --text-tertiary: #706D65;
+    --highlight-bg: #33301A;
+    --highlight-border: #8A7A30;
+    --code-bg: #2E2D28;
+    --table-stripe: rgba(255,255,255,0.03);
+    --delta-pos: #5EC4C0;
+    --delta-neg: #E8907C;
+    --section-rule: #3D3B35;
+  }
+  :root[data-theme="light"] {
+    --gq: #2B7A78;
+    --gq-bg: #e8f4f3;
+    --gi: #B85842;
+    --gi-bg: #fbeae6;
+    --ground: #FAFAF7;
+    --surface: #FFFFFF;
+    --border: #D8D5CE;
+    --text: #2C2A26;
+    --text-secondary: #6B6860;
+    --text-tertiary: #9B9890;
+    --highlight-bg: #FFF8E1;
+    --highlight-border: #E6C84D;
+    --code-bg: #F0EEEA;
+    --table-stripe: rgba(0,0,0,0.025);
+    --delta-pos: #2B7A78;
+    --delta-neg: #B85842;
+    --section-rule: #C8C4BB;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, 'SF Pro Text', system-ui, sans-serif;
+    background: var(--ground);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .report {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  /* Header */
+  .report-header {
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 1.75rem;
+    margin-bottom: 3rem;
+  }
+  .report-header .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 0.5rem;
+  }
+  .report-header h1 {
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    text-wrap: balance;
+    margin-bottom: 0.75rem;
+  }
+  .report-header .subtitle {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .pdb-tags {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .pdb-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .pdb-tag.gq { background: var(--gq-bg); color: var(--gq); }
+  .pdb-tag.gi { background: var(--gi-bg); color: var(--gi); }
+  .pdb-tag .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .pdb-tag.gq .dot { background: var(--gq); }
+  .pdb-tag.gi .dot { background: var(--gi); }
+
+  /* Sections */
+  .section {
+    margin-bottom: 3rem;
+  }
+  .section-rule {
+    border: none;
+    border-top: 1px solid var(--section-rule);
+    margin-bottom: 2rem;
+  }
+  .section h2 {
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.35rem;
+  }
+  .section .phase-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 0.15rem;
+  }
+  .section p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    max-width: 68ch;
+  }
+  .section p strong { color: var(--text); font-weight: 600; }
+
+  /* Key finding callout */
+  .finding {
+    background: var(--highlight-bg);
+    border-left: 3px solid var(--highlight-border);
+    padding: 0.85rem 1.1rem;
+    margin: 1.25rem 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text);
+  }
+  .finding strong { font-weight: 600; }
+
+  /* Tables */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 1.25rem 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  thead th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    background: var(--surface);
+  }
+  thead th.gq-col { color: var(--gq); }
+  thead th.gi-col { color: var(--gi); }
+  thead th.delta-col { color: var(--text-tertiary); }
+  tbody td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: var(--table-stripe); }
+  td.metric-name {
+    font-weight: 500;
+    color: var(--text);
+    white-space: normal;
+    min-width: 120px;
+  }
+  td.gq-val { color: var(--gq); font-weight: 500; }
+  td.gi-val { color: var(--gi); font-weight: 500; }
+  td.delta { font-weight: 500; font-size: 12.5px; }
+  td.delta.pos { color: var(--delta-pos); }
+  td.delta.neg { color: var(--delta-neg); }
+
+  /* Compact two-col comparison */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+  @media (max-width: 600px) {
+    .compare-grid { grid-template-columns: 1fr; }
+  }
+  .compare-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+    background: var(--surface);
+  }
+  .compare-card.gq { border-top: 3px solid var(--gq); }
+  .compare-card.gi { border-top: 3px solid var(--gi); }
+  .compare-card .card-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  .compare-card.gq .card-label { color: var(--gq); }
+  .compare-card.gi .card-label { color: var(--gi); }
+  .compare-card ul {
+    list-style: none;
+    font-size: 13.5px;
+    color: var(--text-secondary);
+  }
+  .compare-card li {
+    padding: 0.2rem 0;
+  }
+  .compare-card li strong { color: var(--text); }
+
+  /* Inline value */
+  .val { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .val.gq { color: var(--gq); }
+  .val.gi { color: var(--gi); }
+
+  /* Summary verdict */
+  .verdict {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  .verdict h3 {
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+  }
+  .verdict ul {
+    list-style: none;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .verdict li {
+    padding: 0.35rem 0;
+    padding-left: 1.4rem;
+    position: relative;
+  }
+  .verdict li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--text-tertiary);
+  }
+  .verdict li strong { color: var(--text); }
+
+  .footnote {
+    font-size: 12.5px;
+    color: var(--text-tertiary);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--section-rule);
+    line-height: 1.6;
+  }
+</style>
+
+<div class="report">
+
+  <header class="report-header">
+    <div class="eyebrow">Molecular Dynamics Comparison</div>
+    <h1>Psilocin-bound 5-HT2A Receptor: G<sub>q</sub> vs G<sub>i</sub> Coupling</h1>
+    <div class="subtitle">10 ns all-atom MD, CHARMM36m, Ingolfsson brain-PM membrane (16 species, 585 lipids, 46% cholesterol). Side-by-side analysis across 10 phases.</div>
+    <div class="pdb-tags">
+      <span class="pdb-tag gq"><span class="dot"></span>G<sub>q</sub> &mdash; PDB 9AS8 &middot; 280,277 atoms &middot; 266 res</span>
+      <span class="pdb-tag gi"><span class="dot"></span>G<sub>i</sub> &mdash; PDB 9LL8 &middot; 270,555 atoms &middot; 262 res</span>
+    </div>
+  </header>
+
+  <!-- ===== RMSD ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 2</div>
+    <h2>Backbone RMSD</h2>
+    <p>Both trajectories aligned per-frame to frame 0. The receptor backbone is well-equilibrated in both systems, but the G protein tells a strikingly different story.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th class="gq-col">G<sub>q</sub> (9AS8)</th>
+            <th class="gi-col">G<sub>i</sub> (9LL8)</th>
+            <th class="delta-col">&Delta;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">Receptor RMSD range</td>
+            <td class="gq-val">0.00 &ndash; 1.69 &Aring;</td>
+            <td class="gi-val">0.00 &ndash; 1.58 &Aring;</td>
+            <td class="delta neg">&minus;0.11 &Aring;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Receptor plateau</td>
+            <td class="gq-val">~1.3&ndash;1.5 &Aring; by 2 ns</td>
+            <td class="gi-val">~0.8&ndash;1.1 &Aring; by 1 ns</td>
+            <td class="delta pos">Gi settles faster</td>
+          </tr>
+          <tr>
+            <td class="metric-name">G protein RMSD range</td>
+            <td class="gq-val">0.00 &ndash; 5.30 &Aring;</td>
+            <td class="gi-val">0.00 &ndash; 2.96 &Aring;</td>
+            <td class="delta neg">&minus;2.34 &Aring;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">G protein behavior</td>
+            <td class="gq-val">Never plateaus; step-jump at ~6&ndash;7 ns</td>
+            <td class="gi-val">Rises to ~1.3&ndash;1.8 &Aring;, stabilizes</td>
+            <td class="delta"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      <strong>Key difference:</strong> The mini-G<sub>q</sub> heterotrimer drifts nearly twice as far as the G<sub>i</sub> (5.30 vs 2.96 &Aring; max RMSD) and never equilibrates within 10 ns. The G<sub>i</sub> interface appears substantially more conformationally stable at this timescale.
+    </div>
+  </section>
+
+  <!-- ===== RMSF ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 3</div>
+    <h2>Per-residue Flexibility (RMSF)</h2>
+    <p>C&alpha; RMSF after in-memory realignment. The G<sub>i</sub>-coupled receptor is slightly more flexible overall (<span class="val gi">0.75 &Aring;</span> mean vs <span class="val gq">0.65 &Aring;</span>), but the pattern is region-specific.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th class="gq-col">G<sub>q</sub> RMSF (&Aring;)</th>
+            <th class="gi-col">G<sub>i</sub> RMSF (&Aring;)</th>
+            <th class="delta-col">&Delta; (&Aring;)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="metric-name">TM1</td><td class="gq-val">0.56 &plusmn; 0.16</td><td class="gi-val">0.66 &plusmn; 0.17</td><td class="delta neg">+0.10</td></tr>
+          <tr><td class="metric-name">ICL1</td><td class="gq-val">0.65 &plusmn; 0.07</td><td class="gi-val">0.89 &plusmn; 0.13</td><td class="delta neg">+0.24</td></tr>
+          <tr><td class="metric-name">TM2</td><td class="gq-val">0.45 &plusmn; 0.09</td><td class="gi-val">0.51 &plusmn; 0.14</td><td class="delta neg">+0.06</td></tr>
+          <tr><td class="metric-name">ECL1</td><td class="gq-val">0.61 &plusmn; 0.12</td><td class="gi-val">0.90 &plusmn; 0.16</td><td class="delta neg">+0.29</td></tr>
+          <tr><td class="metric-name">TM3</td><td class="gq-val">0.42 &plusmn; 0.10</td><td class="gi-val">0.51 &plusmn; 0.15</td><td class="delta neg">+0.09</td></tr>
+          <tr><td class="metric-name">ICL2</td><td class="gq-val">1.24 &plusmn; 0.44</td><td class="gi-val">1.01 &plusmn; 0.18</td><td class="delta pos">&minus;0.23</td></tr>
+          <tr><td class="metric-name">TM4</td><td class="gq-val">0.60 &plusmn; 0.17</td><td class="gi-val">0.75 &plusmn; 0.35</td><td class="delta neg">+0.15</td></tr>
+          <tr><td class="metric-name">ECL2</td><td class="gq-val">0.97 &plusmn; 0.57</td><td class="gi-val">1.01 &plusmn; 0.31</td><td class="delta neg">+0.04</td></tr>
+          <tr><td class="metric-name">TM5</td><td class="gq-val">0.64 &plusmn; 0.23</td><td class="gi-val">0.56 &plusmn; 0.15</td><td class="delta pos">&minus;0.08</td></tr>
+          <tr><td class="metric-name">ICL3c</td><td class="gq-val">0.81 &plusmn; 0.17</td><td class="gi-val">1.36 &plusmn; 0.76</td><td class="delta neg">+0.55</td></tr>
+          <tr><td class="metric-name">TM6</td><td class="gq-val">0.55 &plusmn; 0.09</td><td class="gi-val">0.63 &plusmn; 0.14</td><td class="delta neg">+0.08</td></tr>
+          <tr><td class="metric-name">ECL3</td><td class="gq-val">1.15 &plusmn; 0.34</td><td class="gi-val">1.20 &plusmn; 0.18</td><td class="delta neg">+0.05</td></tr>
+          <tr><td class="metric-name">TM7</td><td class="gq-val">0.50 &plusmn; 0.10</td><td class="gi-val">0.56 &plusmn; 0.12</td><td class="delta neg">+0.06</td></tr>
+          <tr><td class="metric-name">H8</td><td class="gq-val">0.72 &plusmn; 0.18</td><td class="gi-val">1.12 &plusmn; 0.36</td><td class="delta neg">+0.40</td></tr>
+          <tr><td class="metric-name">Ct</td><td class="gq-val">1.74 &plusmn; 0.46</td><td class="gi-val">2.39 &plusmn; 0.23</td><td class="delta neg">+0.65</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      <strong>Pattern:</strong> G<sub>i</sub> coupling loosens the intracellular face &mdash; ICL3c (+0.55 &Aring;), H8 (+0.40 &Aring;), ICL1 (+0.24 &Aring;), and ECL1 (+0.29 &Aring;) are all more flexible under G<sub>i</sub>. The one region that stiffens is <strong>ICL2</strong> (&minus;0.23 &Aring;), which in the G<sub>q</sub> system is the most flexible intracellular loop. TM5 also stiffens slightly under G<sub>i</sub> (&minus;0.08 &Aring;).
+    </div>
+  </section>
+
+  <!-- ===== PSILOCIN ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 4</div>
+    <h2>Psilocin Binding Pose</h2>
+    <p>The orthosteric pocket and salt bridge to D155 are essentially identical regardless of G protein coupling.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th class="gq-col">G<sub>q</sub></th>
+            <th class="gi-col">G<sub>i</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">Salt bridge (N1&middot;&middot;&middot;D155)</td>
+            <td class="gq-val">2.86 &plusmn; 0.12 &Aring;</td>
+            <td class="gi-val">2.87 &plusmn; 0.14 &Aring;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Salt bridge integrity</td>
+            <td class="gq-val">100/100 frames (&lt;3.5 &Aring;)</td>
+            <td class="gi-val">100/100 frames (&lt;3.5 &Aring;)</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Ligand RMSD (heavy atoms)</td>
+            <td class="gq-val">0.77 &plusmn; 0.20 &Aring;</td>
+            <td class="gi-val">0.73 &plusmn; 0.18 &Aring;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Pocket backbone RMSD</td>
+            <td class="gq-val">0.67 &plusmn; 0.12 &Aring;</td>
+            <td class="gi-val">0.72 &plusmn; 0.13 &Aring;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Pocket residues (5 &Aring; cutoff)</td>
+            <td class="gq-val">25 residues, 100 BB atoms</td>
+            <td class="gi-val">22 residues, 88 BB atoms</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      The G<sub>i</sub> pocket is <strong>3 residues smaller</strong> &mdash; L236, F243, and I344 (lit. numbering) fall outside the 5 &Aring; cutoff. These sit at the pocket periphery (TM5/ECL2 and TM6 interfaces), suggesting a subtle narrowing or reorientation of the pocket mouth in the G<sub>i</sub>-coupled state, while the core pharmacophoric contacts are unchanged.
+    </div>
+  </section>
+
+  <!-- ===== HYDROGEN BONDS ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 8</div>
+    <h2>Psilocin&ndash;Receptor Hydrogen Bonds</h2>
+    <p>Custom donor/acceptor detection (CGenFF atom-type workaround). All observed H-bonds are sidechain-mediated in both systems; no backbone involvement.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>H-bond</th>
+            <th class="gq-col">G<sub>q</sub> occ.</th>
+            <th class="gi-col">G<sub>i</sub> occ.</th>
+            <th class="delta-col">&Delta;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">Amine N1&ndash;H17 &rarr; D155:OD1</td>
+            <td class="gq-val">98%</td>
+            <td class="gi-val">93%</td>
+            <td class="delta neg">&minus;5%</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Amine N1&ndash;H17 &rarr; D155:OD2</td>
+            <td class="gq-val">44%</td>
+            <td class="gi-val">61%</td>
+            <td class="delta pos">+17%</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Indole N2&ndash;H13 &rarr; S242:OG</td>
+            <td class="gq-val">67%</td>
+            <td class="gi-val">54%</td>
+            <td class="delta neg">&minus;13%</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Indole N2&ndash;H13 &rarr; T160:OG1</td>
+            <td class="gq-val">19%</td>
+            <td class="gi-val">17%</td>
+            <td class="delta">&minus;2%</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Hydroxyl O &larr; N343:ND2&ndash;HD21</td>
+            <td class="gq-val">3%</td>
+            <td class="gi-val">0%</td>
+            <td class="delta neg">&minus;3%</td>
+          </tr>
+          <tr style="border-top: 2px solid var(--border);">
+            <td class="metric-name"><strong>H-bonds/frame</strong></td>
+            <td class="gq-val"><strong>2.3 &plusmn; 0.7</strong> (1&ndash;4)</td>
+            <td class="gi-val"><strong>2.2 &plusmn; 0.6</strong> (1&ndash;3)</td>
+            <td class="delta">&minus;0.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      The G<sub>q</sub> system supports <strong>5 unique H-bond types</strong> vs <strong>4 in G<sub>i</sub></strong>. The hydroxyl&ndash;ASN343 interaction (3% occupancy) is exclusive to G<sub>q</sub> &mdash; psilocin's hydroxyl never donates or accepts in the G<sub>i</sub> pocket. The amine group redistributes: the primary D155:OD1 contact weakens (&minus;5%) while the secondary OD2 contact strengthens (+17%), suggesting the protonated amine samples both carboxylate oxygens more evenly under G<sub>i</sub>. The indole NH&ndash;S242 contact drops 13%.
+    </div>
+  </section>
+
+  <!-- ===== AROMATICS + ROTAMERS ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phases 9 &amp; 10</div>
+    <h2>Aromatic Cage Dynamics &amp; Rotamers</h2>
+    <p>Ring reorientation (SVD-derived normal vectors) and chi1/chi2 dihedral analysis for the 6 pocket aromatics + psilocin.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Residue</th>
+            <th class="gq-col">G<sub>q</sub> total rotation</th>
+            <th class="gi-col">G<sub>i</sub> total rotation</th>
+            <th class="gq-col">G<sub>q</sub> &chi;1 trans.</th>
+            <th class="gi-col">G<sub>i</sub> &chi;1 trans.</th>
+            <th>Rotamer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">W336 (toggle)</td>
+            <td class="gq-val">1035&deg;</td>
+            <td class="gi-val">879&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>g&minus;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">F339</td>
+            <td class="gq-val">1274&deg;</td>
+            <td class="gi-val">1300&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>t</td>
+          </tr>
+          <tr>
+            <td class="metric-name">F340</td>
+            <td class="gq-val">989&deg;</td>
+            <td class="gi-val">1033&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>g&minus;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">F234</td>
+            <td class="gq-val">2390&deg;</td>
+            <td class="gi-val">2596&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val"><strong>4</strong></td>
+            <td>t</td>
+          </tr>
+          <tr>
+            <td class="metric-name">F243</td>
+            <td class="gq-val">1046&deg;</td>
+            <td class="gi-val">973&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>t</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Y370</td>
+            <td class="gq-val">1129&deg;</td>
+            <td class="gi-val">1169&deg;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>g&minus;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Psilocin</td>
+            <td class="gq-val">1058&deg;</td>
+            <td class="gi-val">965&deg;</td>
+            <td class="gq-val">&mdash;</td>
+            <td class="gi-val">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td class="metric-name">D155</td>
+            <td class="gq-val">&mdash;</td>
+            <td class="gi-val">&mdash;</td>
+            <td class="gq-val">0</td>
+            <td class="gi-val">0</td>
+            <td>t</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      <strong>F234 is the critical differentiator.</strong> Both systems show F234 as a mobility outlier (~2&times; cumulative rotation of any other ring), but only in the G<sub>i</sub> system does it undergo <strong>4 discrete &chi;1 rotamer transitions</strong> (G<sub>q</sub>: zero). Its &chi;1 std is 32.0&deg; in G<sub>i</sub> vs 8.2&deg; in G<sub>q</sub>, and &chi;2 std is 111.3&deg; vs 125.3&deg;. This suggests F234 explores multiple rotameric wells under G<sub>i</sub> coupling, while remaining locked in one well (but wobbling freely) under G<sub>q</sub>. W336 (the toggle switch) stays locked in the activated g&minus; rotamer in both systems.
+    </div>
+  </section>
+
+  <!-- ===== LIPID CONTACTS ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 6</div>
+    <h2>Receptor&ndash;Lipid Contact Profile</h2>
+    <p>4.0 &Aring; cutoff contact search across 609 lipid molecules (16 species). The lipid annulus around the receptor reshuffles substantially between coupling states.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Species</th>
+            <th class="gq-col">G<sub>q</sub> total freq</th>
+            <th class="gi-col">G<sub>i</sub> total freq</th>
+            <th class="gq-col">G<sub>q</sub> per-mol</th>
+            <th class="gi-col">G<sub>i</sub> per-mol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="metric-name">CHL1</td><td class="gq-val">73.3</td><td class="gi-val">65.7</td><td class="gq-val">0.26</td><td class="gi-val">0.24</td></tr>
+          <tr><td class="metric-name">POPE</td><td class="gq-val">36.0</td><td class="gi-val">0.1</td><td class="gq-val">2.40</td><td class="gi-val">0.00</td></tr>
+          <tr><td class="metric-name">POPC</td><td class="gq-val">9.0</td><td class="gi-val">57.2</td><td class="gq-val">0.19</td><td class="gi-val">1.19</td></tr>
+          <tr><td class="metric-name">PAPE</td><td class="gq-val">24.5</td><td class="gi-val">58.2</td><td class="gq-val">0.68</td><td class="gi-val">1.62</td></tr>
+          <tr><td class="metric-name">DOPC</td><td class="gq-val">26.5</td><td class="gi-val">&mdash;</td><td class="gq-val">2.95</td><td class="gi-val">&mdash;</td></tr>
+          <tr><td class="metric-name">SDPE</td><td class="gq-val">33.1</td><td class="gi-val">31.7</td><td class="gq-val">0.61</td><td class="gi-val">0.59</td></tr>
+          <tr><td class="metric-name">SDPS</td><td class="gq-val">11.8</td><td class="gi-val">22.9</td><td class="gq-val">0.79</td><td class="gi-val">1.53</td></tr>
+          <tr><td class="metric-name">PSM</td><td class="gq-val">24.3</td><td class="gi-val">2.5</td><td class="gq-val">0.90</td><td class="gi-val">0.09</td></tr>
+          <tr><td class="metric-name">GalCer</td><td class="gq-val">24.2</td><td class="gi-val">9.2</td><td class="gq-val">1.01</td><td class="gi-val">0.38</td></tr>
+          <tr><td class="metric-name">PAPS</td><td class="gq-val">11.3</td><td class="gi-val">11.4</td><td class="gq-val">1.26</td><td class="gi-val">1.26</td></tr>
+          <tr><td class="metric-name">SAPI</td><td class="gq-val">14.3</td><td class="gi-val">9.9</td><td class="gq-val">1.59</td><td class="gi-val">1.10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      <strong>Dramatic lipid annulus rearrangement.</strong> POPE contacts the G<sub>q</sub> receptor heavily (36.0 total, 2.40/mol) but essentially never touches G<sub>i</sub> (0.1). Conversely, POPC and PAPE are minor players around G<sub>q</sub> but become dominant contacts around G<sub>i</sub> (57.2 and 58.2 total, respectively). PSM and GalCer (sphingolipids) strongly favor the G<sub>q</sub> annulus. Since both simulations use the same membrane composition, this reshuffling reflects how G protein coupling changes the receptor's TM surface geometry and charge distribution, selectively recruiting different lipid species.
+    </div>
+
+    <div class="compare-grid">
+      <div class="compare-card gq">
+        <div class="card-label">G<sub>q</sub> cholesterol</div>
+        <ul>
+          <li><strong>54</strong> persistent CHL1 contacts (&ge;0.9)</li>
+          <li><strong>28</strong> residues at freq = 1.00</li>
+          <li>4 clusters: TM1, ECL1/TM3, TM4&ndash;TM5, TM6&ndash;TM7</li>
+        </ul>
+      </div>
+      <div class="compare-card gi">
+        <div class="card-label">G<sub>i</sub> cholesterol</div>
+        <ul>
+          <li><strong>44</strong> persistent CHL1 contacts (&ge;0.9)</li>
+          <li><strong>21</strong> residues at freq = 1.00</li>
+          <li>Less dense TM4&ndash;TM5 cluster</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRAC/CARC ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Cross-phase</div>
+    <h2>CRAC/CARC Cholesterol Recognition Motifs</h2>
+    <p>Sequence-predicted motifs cross-referenced against simulation CHL1 contact frequencies. Same 7 motifs detected in both systems; different ones are functionally active.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Motif</th>
+            <th>Type</th>
+            <th>Region</th>
+            <th class="gq-col">G<sub>q</sub> central Y/F CHL1</th>
+            <th class="gi-col">G<sub>i</sub> central Y/F CHL1</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">L136&ndash;Y137&ndash;R140</td>
+            <td>CRAC</td>
+            <td>TM2</td>
+            <td class="gq-val">0.24</td>
+            <td class="gi-val">0.99</td>
+            <td>G<sub>i</sub> active</td>
+          </tr>
+          <tr>
+            <td class="metric-name">L136&ndash;Y139&ndash;R140</td>
+            <td>CRAC</td>
+            <td>ECL1</td>
+            <td class="gq-val">0.00</td>
+            <td class="gi-val">0.89</td>
+            <td>G<sub>i</sub> active</td>
+          </tr>
+          <tr>
+            <td class="metric-name">V251&ndash;Y254&ndash;K259</td>
+            <td>CRAC</td>
+            <td>TM5</td>
+            <td class="gq-val">0.99</td>
+            <td class="gi-val">0.01</td>
+            <td>G<sub>q</sub> active</td>
+          </tr>
+          <tr>
+            <td class="metric-name">R173&ndash;Y174&ndash;V175</td>
+            <td>CARC</td>
+            <td>TM3</td>
+            <td class="gq-val">1.00</td>
+            <td class="gi-val">1.00</td>
+            <td>Both active</td>
+          </tr>
+          <tr>
+            <td class="metric-name">K191&ndash;F193&ndash;L194</td>
+            <td>CARC</td>
+            <td>TM4</td>
+            <td class="gq-val">0.00</td>
+            <td class="gi-val">1.00</td>
+            <td>G<sub>i</sub> active</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="finding">
+      The TM3 CARC motif (R173&ndash;Y174&ndash;V175) is a constitutive cholesterol site in both coupling states. However, <strong>G<sub>q</sub> uniquely activates the TM5 CRAC</strong> (V251&ndash;Y254, freq 0.99 vs 0.01), while <strong>G<sub>i</sub> uniquely activates the TM2/ECL1 CRAC and TM4 CARC</strong>. The coupling state effectively relocates the cholesterol recognition surface &mdash; G<sub>q</sub> binds cholesterol on TM5 while G<sub>i</sub> binds it on TM2/TM4.
+    </div>
+  </section>
+
+  <!-- ===== LIPID ORDER ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Phase 5</div>
+    <h2>Lipid Acyl-chain Order Parameters</h2>
+    <p>|S<sub>CD</sub>| values are essentially identical between the two systems, confirming that the membrane bulk properties are unperturbed by the choice of G protein.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Chain</th>
+            <th class="gq-col">G<sub>q</sub> mean |S<sub>CD</sub>|</th>
+            <th class="gi-col">G<sub>i</sub> mean |S<sub>CD</sub>|</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="metric-name">POPC sn-1 (16:0)</td><td class="gq-val">0.241</td><td class="gi-val">0.235</td></tr>
+          <tr><td class="metric-name">POPC sn-2 (18:1)</td><td class="gq-val">0.182</td><td class="gi-val">0.185</td></tr>
+          <tr><td class="metric-name">POPE sn-1 (16:0)</td><td class="gq-val">0.254</td><td class="gi-val">0.247</td></tr>
+          <tr><td class="metric-name">POPE sn-2 (18:1)</td><td class="gq-val">0.189</td><td class="gi-val">0.185</td></tr>
+          <tr><td class="metric-name">SDPE sn-1 (18:0)</td><td class="gq-val">0.224</td><td class="gi-val">0.224</td></tr>
+          <tr><td class="metric-name">SDPE sn-2 (DHA 22:6)</td><td class="gq-val">0.056</td><td class="gi-val">0.055</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>All values within &lt;0.01 of each other. The DHA (22:6) sn-2 chain in SDPE is radically disordered in both (|S<sub>CD</sub>| ~0.055), as expected for 6 <em>cis</em> double bonds.</p>
+  </section>
+
+  <!-- ===== RMSF vs CONTACTS ===== -->
+  <section class="section">
+    <hr class="section-rule">
+    <div class="phase-label">Cross-phase</div>
+    <h2>RMSF vs Lipid Contact Correlation</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Correlation</th>
+            <th class="gq-col">G<sub>q</sub> &rho;</th>
+            <th class="gi-col">G<sub>i</sub> &rho;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">All residues vs total contacts</td>
+            <td class="gq-val">0.030 (p=0.63)</td>
+            <td class="gi-val">0.003 (p=0.96)</td>
+          </tr>
+          <tr>
+            <td class="metric-name">Contacting residues only</td>
+            <td class="gq-val">&minus;0.171 (p=0.018)</td>
+            <td class="gi-val">&minus;0.253 (p=4&times;10<sup>&minus;4</sup>)</td>
+          </tr>
+          <tr>
+            <td class="metric-name">RMSF vs CHL1 only</td>
+            <td class="gq-val">&minus;0.015 (p=0.81)</td>
+            <td class="gi-val">0.006 (p=0.93)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Both systems show no global RMSF&ndash;lipid contact relationship, but a significant weak negative correlation among lipid-contacting residues &mdash; stronger in G<sub>i</sub> (&rho;=&minus;0.253 vs &minus;0.171). This suggests the G<sub>i</sub> lipid annulus exerts slightly more stabilizing influence on the residues it contacts.</p>
+  </section>
+
+  <!-- ===== SYNTHESIS ===== -->
+  <section class="section">
+    <hr class="section-rule">
+
+    <div class="verdict">
+      <h3>Synthesis: What G protein coupling changes</h3>
+      <ul>
+        <li><strong>G protein interface stability.</strong> G<sub>i</sub> sits far more stably on the receptor (max RMSD 2.96 vs 5.30 &Aring;). The mini-G<sub>q</sub> never equilibrates over 10 ns, suggesting either a weaker interface or ongoing conformational search.</li>
+        <li><strong>Intracellular flexibility redistribution.</strong> G<sub>i</sub> loosens ICL3c, H8, and ICL1/ECL1 while stiffening ICL2. G<sub>q</sub> does the opposite &mdash; ICL2 is the most mobile intracellular loop. This mirrors the known structural basis: ICL2 and ICL3 are the primary G protein contact points, and their relative mobility likely reflects differences in how the two G&alpha; subunits engage the receptor intracellular face.</li>
+        <li><strong>Orthosteric pocket is invariant.</strong> The psilocin salt bridge, ligand RMSD, and total H-bonds/frame are indistinguishable. G protein coupling does not propagate structurally to the ligand pose at this timescale.</li>
+        <li><strong>Subtle H-bond redistribution.</strong> The amine&ndash;D155 interaction redistributes between the two carboxylate oxygens (OD1 vs OD2), and the indole NH&ndash;S242 contact weakens by 13% under G<sub>i</sub>. The hydroxyl&ndash;N343 contact (3%) exists only in G<sub>q</sub>.</li>
+        <li><strong>F234 rotameric switching is G<sub>i</sub>-specific.</strong> This pocket aromatic undergoes 4 &chi;1 transitions only in G<sub>i</sub>, despite comparable ring mobility in both. F234 sits adjacent to D155 and could serve as a dynamic relay between the binding pocket and TM5/TM6 region.</li>
+        <li><strong>Lipid annulus reshuffles by coupling state.</strong> PE/sphingolipid-enriched in G<sub>q</sub>, PC/PE-plasmalogen-enriched in G<sub>i</sub>. The 16-species composition is identical, so this reflects receptor surface changes selectively recruiting different lipid headgroups.</li>
+        <li><strong>Cholesterol recognition sites relocate.</strong> The TM3 CARC is constitutive; G<sub>q</sub> adds TM5 CRAC, G<sub>i</sub> adds TM2/TM4 CRAC/CARC. The cholesterol binding footprint rotates around the receptor helix bundle.</li>
+        <li><strong>Membrane bulk properties are unchanged.</strong> Lipid order parameters are identical within noise, confirming the differences are local to the receptor&ndash;lipid interface.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footnote">
+    Both systems: 10 ns production, CHARMM36m, 310.15 K, OpenMM/Metal GPU (Apple M4), 100 frames @ 100 ps. Ingolfsson brain PM membrane: 585 lipids, 16 species, 46% cholesterol. Receptor: psilocin-bound 5-HT2A with ICL3 unresolved. G<sub>q</sub> system uses 3-segment receptor (PROA/PROB/PROC, offset +78/+127); G<sub>i</sub> uses 2-segment (PROE/PROF, offset +79/+131). All literature residue numbering refers to canonical Ballesteros&ndash;Weinstein-adjacent labeling from the respective cryo-EM structures.
+  </div>
+</div>
