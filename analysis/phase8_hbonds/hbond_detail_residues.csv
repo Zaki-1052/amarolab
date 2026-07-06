@@ -1,0 +1,5 @@
+resname,lit_resid,segid,resid,bb_occupancy,sc_occupancy,psi_groups
+ASP,155,PROA,77,0.0,1.0,amine
+THR,160,PROA,82,0.0,0.19,indole NH
+SER,242,PROB,164,0.0,0.67,indole NH
+ASN,343,PROC,216,0.0,0.03,hydroxyl

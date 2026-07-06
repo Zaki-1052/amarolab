@@ -1,0 +1,41 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Binding pocket: 25 residues
+Protein donor-H pairs: 33 (25 BB, 8 SC)
+Protein acceptor atoms: 33 (25 BB, 8 SC)
+  frame 20/100: 2 H-bonds
+  frame 40/100: 2 H-bonds
+  frame 60/100: 1 H-bonds
+  frame 80/100: 2 H-bonds
+  frame 100/100: 2 H-bonds
+
+Total H-bond observations: 231
+
+Unique H-bond types: 5
+
+Group        Type Label                                           Occ   Dist  Angle
+----------------------------------------------------------------------------------
+amine        SC   N1-H17 → ASP155:OD1                             98%   2.91  158.8
+amine        SC   N1-H17 → ASP155:OD2                             44%   3.05  142.8
+indole NH    SC   N2-H13 → SER242:OG                              67%   2.99  155.6
+indole NH    SC   N2-H13 → THR160:OG1                             19%   3.14  138.2
+hydroxyl     SC   O ← ASN343:ND2-HD21                              3%   3.43  141.9
+
+H-bonds per frame: 2.3 +/- 0.7 (range 1-4)
+  amine       : 1.4 +/- 0.5 (range 1-2)
+  hydroxyl    : 0.0 +/- 0.2 (range 0-1)
+  indole NH   : 0.9 +/- 0.4 (range 0-2)
+
+Residue       BB occ  SC occ Groups
+-------------------------------------------------------
+ASP155           0%    100%   amine
+THR160           0%     19%   indole NH
+SER242           0%     67%   indole NH
+ASN343           0%      3%   hydroxyl
+
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_detail_residues.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_detail_bonds.csv
+CSV saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_detail_timeseries.csv
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_existence_map.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_by_group.png
+Plot saved: /Users/zakiralibhai/Documents/School/biochemcore/amarolab/analysis/phase8_hbonds/hbond_residue_detail.png

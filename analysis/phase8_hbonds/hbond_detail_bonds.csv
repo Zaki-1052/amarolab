@@ -1,0 +1,6 @@
+psi_group,partner_type,label,occupancy,mean_distance,mean_angle,partner_resname,partner_lit_resid
+amine,SC,N1-H17 → ASP155:OD1,0.98,2.91,158.8,ASP,155
+amine,SC,N1-H17 → ASP155:OD2,0.44,3.05,142.8,ASP,155
+indole NH,SC,N2-H13 → SER242:OG,0.67,2.99,155.6,SER,242
+indole NH,SC,N2-H13 → THR160:OG1,0.19,3.14,138.2,THR,160
+hydroxyl,SC,O ← ASN343:ND2-HD21,0.03,3.43,141.9,ASN,343
