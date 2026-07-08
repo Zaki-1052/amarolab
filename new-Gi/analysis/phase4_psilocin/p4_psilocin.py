@@ -142,3 +142,29 @@ fig.tight_layout()
 fig.savefig(f'{OUT}/binding_pose.png', dpi=150)
 plt.close()
 print(f"Plot saved: {OUT}/binding_pose.png")
+
+# ── Histogram ────────────────────────────────────────────────
+
+fig2, (ax3, ax4) = plt.subplots(2, 1, figsize=(6, 5))
+
+ax3.hist(salt_bridge, bins=20, color='#d7191c', edgecolor='white', alpha=0.85)
+ax3.axvline(x=salt_bridge.mean(), color='black', linestyle='-', linewidth=1.0,
+            label=f'Mean = {salt_bridge.mean():.2f} Å')
+ax3.axvline(x=3.5, color='grey', linestyle='--', alpha=0.6, label='3.5 Å cutoff')
+ax3.set_xlabel('Salt bridge distance (Å)')
+ax3.set_ylabel('Frames')
+ax3.set_title('Psilocin N1 — D155 distance distribution')
+ax3.legend(fontsize=7)
+
+ax4.hist(ligand_rmsd, bins=20, color='#2c7bb6', edgecolor='white', alpha=0.85)
+ax4.axvline(x=ligand_rmsd.mean(), color='black', linestyle='-', linewidth=1.0,
+            label=f'Mean = {ligand_rmsd.mean():.2f} Å')
+ax4.set_xlabel('Ligand RMSD (Å)')
+ax4.set_ylabel('Frames')
+ax4.set_title('Psilocin heavy-atom RMSD distribution')
+ax4.legend(fontsize=7)
+
+fig2.tight_layout()
+fig2.savefig(f'{OUT}/binding_pose_hist.png', dpi=150)
+plt.close()
+print(f"Plot saved: {OUT}/binding_pose_hist.png")
