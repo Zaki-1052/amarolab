@@ -37,6 +37,10 @@ amarolab/
     omm_*.py                  # OpenMM support modules
     step6.*_equilibration.*   # Equilibration inputs, logs, DCDs, restarts
     step7_*                   # Production inputs, logs, DCDs, restarts
+    step6.*_equilibration.inp # Equilibration parameters (6-step restraint release)
+    step7_production.inp      # Production run parameters
+    step6.*_equilibration.out # Equilibration logs (convergence data)
+    step7_*.out               # Production logs
     run_production.sh         # Production run wrapper
     expanse_production.sb     # SDSC Expanse SLURM batch script
     restraints/               # Restraint definitions
