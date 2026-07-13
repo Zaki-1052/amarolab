@@ -1,0 +1,11 @@
+name: tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - openmm
+  - ca-certificates
+  - openssl
+  - nglview
+prefix: /home/anoland/mambaforge/envs/tutorial
