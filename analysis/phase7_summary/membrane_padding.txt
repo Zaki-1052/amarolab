@@ -1,0 +1,23 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+Protein: 14529 atoms
+Phosphorus atoms (membrane): 282
+  frame 20/100
+  frame 40/100
+  frame 60/100
+  frame 80/100
+  frame 100/100
+
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/analysis/phase7_summary/membrane_padding.csv
+
+Dimension Mean clearance  Min clearance  Pass
+--------------------------------------------
+X                24.2           19.8   YES
+Y                51.6           43.6   YES
+Z                62.6           53.5   YES
+
+Protein Z range: -10.4 to 127.3
+Membrane Z (phosphorus means): bottom = 71.4, top = 109.7
+
+Overall: PASS — all frames >= 15 A
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/analysis/phase7_summary/membrane_padding.png

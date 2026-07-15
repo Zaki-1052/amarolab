@@ -43,10 +43,12 @@ for fi, ts in enumerate(u.trajectory):
     clearance = box - prot_extent
 
     p_pos = phosphorus.positions
-    upper_p = p_pos[p_pos[:, 2] > 0]
-    lower_p = p_pos[p_pos[:, 2] < 0]
-    membrane_top = upper_p[:, 2].mean() if len(upper_p) > 0 else np.nan
-    membrane_bot = lower_p[:, 2].mean() if len(lower_p) > 0 else np.nan
+    p_z = p_pos[:, 2]
+    p_z_median = np.median(p_z)
+    upper_p = p_z[p_z > p_z_median]
+    lower_p = p_z[p_z <= p_z_median]
+    membrane_top = upper_p.mean() if len(upper_p) > 0 else np.nan
+    membrane_bot = lower_p.mean() if len(lower_p) > 0 else np.nan
 
     rows.append({
         'frame': fi,
@@ -67,8 +69,8 @@ for fi, ts in enumerate(u.trajectory):
         'clearance_y': round(clearance[1], 2),
         'clearance_z': round(clearance[2], 2),
         'min_clearance': round(clearance.min(), 2),
-        'membrane_top_z': round(membrane_top, 2) if not np.isnan(membrane_top) else '',
-        'membrane_bot_z': round(membrane_bot, 2) if not np.isnan(membrane_bot) else '',
+        'membrane_top_z': round(membrane_top, 2),
+        'membrane_bot_z': round(membrane_bot, 2),
     })
 
     if (fi + 1) % 20 == 0:
@@ -93,9 +95,9 @@ for dim in ['x', 'y', 'z']:
     print(f"{dim.upper():<6} {mean_c:14.1f} {min_c:14.1f} {'YES' if ok else 'NO':>5}")
 
 print(f"\nProtein Z range: {df['prot_zmin'].min():.1f} to {df['prot_zmax'].max():.1f}")
-print(f"Membrane Z (phosphorus means): "
-      f"bottom = {df['membrane_bot_z'].astype(float).mean():.1f}, "
-      f"top = {df['membrane_top_z'].astype(float).mean():.1f}")
+mem_bot = pd.to_numeric(df['membrane_bot_z'], errors='coerce').mean()
+mem_top = pd.to_numeric(df['membrane_top_z'], errors='coerce').mean()
+print(f"Membrane Z (phosphorus means): bottom = {mem_bot:.1f}, top = {mem_top:.1f}")
 print(f"\nOverall: {'PASS — all frames >= {:.0f} A'.format(THRESHOLD)}"
       if all_pass else
       f"\nOverall: FAIL — some frames below {THRESHOLD} A threshold")

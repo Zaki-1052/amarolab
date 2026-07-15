@@ -1,0 +1,49 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336: 9 ring atoms selected
+F339: 6 ring atoms selected
+F340: 6 ring atoms selected
+F234: 6 ring atoms selected
+F243: 6 ring atoms selected
+Y370: 6 ring atoms selected
+Psilocin: 9 ring atoms selected
+  frame 20/100
+  WARNING: F234 frame 26 — normal drifted 87.8° from reference axis
+  WARNING: F234 frame 27 — normal drifted 82.1° from reference axis
+  frame 40/100
+  frame 60/100
+  WARNING: F234 frame 78 — normal drifted 80.4° from reference axis
+  frame 80/100
+  WARNING: F234 frame 84 — normal drifted 86.8° from reference axis
+  WARNING: F234 frame 86 — normal drifted 84.7° from reference axis
+  WARNING: F234 frame 87 — normal drifted 87.9° from reference axis
+  WARNING: F234 frame 88 — normal drifted 89.7° from reference axis
+  WARNING: F234 frame 92 — normal drifted 80.8° from reference axis
+  WARNING: F234 frame 95 — normal drifted 84.0° from reference axis
+  WARNING: F234 frame 96 — normal drifted 86.1° from reference axis
+  frame 100/100
+
+Ring         Unsign tot Signed tot Norm (÷180) Mean |Δ|  Std |Δ|  Mean sΔ   Std sΔ
+------------------------------------------------------------------------------------------
+W336              879.0       34.0       4.883     8.88     4.47     0.34     9.94
+F339             1300.1      214.3       7.223    13.13     6.99     2.16    14.72
+F340             1032.5       29.2       5.736    10.43     5.02     0.29    11.57
+F234             2595.6       15.7      14.420    26.22    20.16     0.16    33.07
+F243              972.6      -13.3       5.403     9.82     4.92    -0.13    10.99
+Y370             1169.0      -65.5       6.494    11.81     8.36    -0.66    14.45
+Psilocin          964.5       43.8       5.359     9.74     5.67     0.44    11.26
+
+Pairwise Pearson r (signed deltas):
+            W336    F339    F340    F234
+    W336   1.000   0.115   0.178  -0.071
+    F339   0.115   1.000   0.060  -0.031
+    F340   0.178   0.060   1.000  -0.028
+    F234  -0.071  -0.031  -0.028   1.000
+
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_signed_rotations.csv
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_signed_summary.csv
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_correlations.csv
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/signed_cumulative_rotations.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/unsigned_vs_signed_cumulative.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_correlation_matrix.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gi/analysis/phase9_aromatics/aromatic_running_correlation.png

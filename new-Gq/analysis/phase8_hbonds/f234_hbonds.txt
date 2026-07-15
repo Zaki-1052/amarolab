@@ -1,0 +1,106 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+F234 heavy atoms: 11
+F234 neighborhood (8.0 A): 33 residues
+  LIG1 (HETA 1)
+  ILE152 (PROA 74)
+  TYR153 (PROA 75)
+  VAL156 (PROA 78)
+  GLY205 (PROB 127)
+  ILE206 (PROB 128)
+  SER207 (PROB 129)
+  MET208 (PROB 130)
+  PRO209 (PROB 131)
+  ILE210 (PROB 132)
+  PRO211 (PROB 133)
+  VAL212 (PROB 134)
+  PHE213 (PROB 135)
+  GLY214 (PROB 136)
+  LYS220 (PROB 142)
+  VAL221 (PROB 143)
+  LEU229 (PROB 151)
+  ALA230 (PROB 152)
+  ASP231 (PROB 153)
+  ASP232 (PROB 154)
+  ASN233 (PROB 155)
+  PHE234 (PROB 156)
+  VAL235 (PROB 157)
+  LEU236 (PROB 158)
+  ILE237 (PROB 159)
+  GLY238 (PROB 160)
+  SER239 (PROB 161)
+  PHE240 (PROB 162)
+  VAL241 (PROB 163)
+  SER242 (PROB 164)
+  ASN343 (PROC 216)
+  ILE344 (PROC 217)
+  VAL347 (PROC 220)
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase8_hbonds/f234_neighborhood_residues.csv
+Psilocin in neighborhood: 3 donor groups, 1 acceptor atoms
+Protein donors: 41 (30 BB, 11 SC)
+Protein acceptors: 43 (32 BB, 11 SC)
+  frame 20/100: 15 H-bonds
+  frame 40/100: 17 H-bonds
+  frame 60/100: 17 H-bonds
+  frame 80/100: 17 H-bonds
+  frame 100/100: 16 H-bonds
+
+Total H-bond observations: 1712
+
+Unique H-bond types: 49
+
+Category             Type    Label                                                     Occ   Dist  Angle
+---------------------------------------------------------------------------------------------------------
+protein-protein      BB-BB   VAL156:N-HN → ILE152:O                                   100%   3.01  165.4
+protein-protein      BB-BB   SER242:N-HN → GLY238:O                                    99%   2.94  156.4
+protein-protein      BB-BB   PHE213:N-HN → PRO209:O                                    98%   2.96  164.3
+protein-protein      BB-BB   ALA230:N-HN → LYS220:O                                    98%   2.87  163.1
+protein-protein      BB-BB   GLY238:N-HN → PHE234:O                                    98%   2.80  153.9
+protein-protein      SC-BB   SER239:OG-HG1 → VAL235:O                                  98%   2.85  160.1
+protein-protein      BB-BB   LEU236:N-HN → ASP232:O                                    96%   2.99  160.5
+protein-protein      BB-BB   SER239:N-HN → VAL235:O                                    93%   2.99  154.1
+protein-protein      BB-BB   VAL241:N-HN → ILE237:O                                    92%   3.12  161.3
+protein-protein      BB-BB   GLY214:N-HN → ILE210:O                                    90%   2.93  149.6
+protein-protein      BB-BB   ILE237:N-HN → ASN233:O                                    84%   3.09  165.9
+protein-protein      BB-BB   VAL235:N-HN → ASP231:O                                    83%   3.02  162.9
+protein-protein      BB-BB   ILE210:N-HN → SER207:O                                    77%   3.17  151.1
+psilocin-indole NH   SC      Psi:N2-H13 → SER242:OG                                    67%   2.99  155.6
+protein-protein      BB-BB   VAL347:N-HN → ASN343:O                                    65%   3.15  158.2
+protein-protein      BB-BB   PHE240:N-HN → LEU236:O                                    57%   3.26  157.3
+protein-protein      SC-BB   SER242:OG-HG1 → GLY238:O                                  52%   2.70  161.1
+protein-protein      BB-SC   PHE234:N-HN → ASP231:OD2                                  34%   3.14  159.4
+protein-protein      SC-SC   ASN343:ND2-HD22 → SER239:OG                               25%   3.15  144.7
+protein-protein      SC-SC   LYS220:NZ-HZ3 → ASP231:OD1                                25%   2.71  163.3
+protein-protein      SC-SC   LYS220:NZ-HZ2 → ASP231:OD1                                18%   2.75  156.3
+protein-protein      BB-BB   VAL347:N-HN → ILE344:O                                    15%   3.13  142.3
+protein-protein      BB-SC   PHE234:N-HN → ASP231:OD1                                  14%   3.06  161.5
+protein-protein      BB-SC   ASN233:N-HN → ASP231:OD2                                  14%   3.06  143.0
+protein-protein      SC-SC   LYS220:NZ-HZ2 → ASP231:OD2                                13%   2.78  159.9
+protein-protein      BB-BB   MET208:N-HN → GLY205:O                                    12%   3.41  145.6
+protein-protein      SC-SC   LYS220:NZ-HZ3 → ASP231:OD2                                11%   2.87  156.8
+protein-protein      BB-BB   PHE240:N-HN → ILE237:O                                    10%   3.10  134.1
+protein-protein      BB-SC   ASN233:N-HN → ASP231:OD1                                   9%   3.10  140.2
+protein-protein      BB-BB   PHE234:N-HN → ASP231:O                                     8%   3.10  137.4
+protein-protein      BB-BB   VAL212:N-HN → PRO209:O                                     7%   3.22  136.2
+protein-protein      SC-SC   LYS220:NZ-HZ1 → ASP231:OD1                                 7%   2.74  159.7
+protein-protein      BB-BB   VAL212:N-HN → MET208:O                                     7%   3.44  164.5
+protein-protein      SC-SC   LYS220:NZ-HZ1 → ASP231:OD2                                 6%   2.65  160.3
+protein-protein      BB-SC   ASN233:N-HN → ASP232:OD2                                   6%   2.93  146.1
+protein-protein      BB-BB   ASP232:N-HN → ALA230:O                                     3%   3.03  136.3
+protein-protein      BB-BB   SER239:N-HN → LEU236:O                                     3%   3.25  133.8
+psilocin-hydroxyl    SC      Psi:O ← ASN343:ND2-HD21                                    3%   3.43  141.9
+protein-protein      BB-BB   PHE213:N-HN → ILE210:O                                     2%   3.24  133.9
+protein-protein      SC-SC   TYR153:OH-HH → MET208:SD                                   2%   3.15  149.2
+protein-protein      BB-BB   VAL235:N-HN → ASP232:O                                     2%   3.31  134.9
+protein-protein      BB-BB   GLY214:N-HN → PRO211:O                                     2%   3.05  133.4
+protein-protein      BB-BB   ASP231:N-HN → LYS220:O                                     1%   3.47  133.8
+protein-protein      BB-BB   SER242:N-HN → SER239:O                                     1%   3.40  133.4
+protein-protein      SC-SC   ASN233:ND2-HD22 → ASP232:OD2                               1%   3.09  161.5
+protein-protein      BB-BB   ILE237:N-HN → PHE234:O                                     1%   2.97  131.2
+protein-protein      BB-BB   ASP231:N-HN → LEU229:O                                     1%   3.45  139.6
+protein-protein      BB-SC   ASP232:N-HN → ASP231:OD1                                   1%   2.96  133.3
+protein-protein      BB-BB   VAL241:N-HN → GLY238:O                                     1%   3.21  131.1
+
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase8_hbonds/f234_hbond_occupancy.csv
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase8_hbonds/f234_hbond_occupancy_histogram.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase8_hbonds/f234_hbond_existence_map.png

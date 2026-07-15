@@ -1,0 +1,39 @@
+/opt/homebrew/anaconda3/envs/biochemcore/lib/python3.11/site-packages/MDAnalysis/coordinates/DCD.py:171: DeprecationWarning: DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you.
+  warnings.warn("DCDReader currently makes independent timesteps"
+W336: 9 ring atoms selected
+F339: 6 ring atoms selected
+F340: 6 ring atoms selected
+F234: 6 ring atoms selected
+F243: 6 ring atoms selected
+Y370: 6 ring atoms selected
+Psilocin: 9 ring atoms selected
+  frame 20/100
+  frame 40/100
+  frame 60/100
+  frame 80/100
+  frame 100/100
+
+Ring         Unsign tot Signed tot Norm (÷180) Mean |Δ|  Std |Δ|  Mean sΔ   Std sΔ
+------------------------------------------------------------------------------------------
+W336             1035.1       54.7       5.751    10.46     5.88     0.55    11.99
+F339             1273.8       34.6       7.077    12.87     7.39     0.35    14.83
+F340              989.2       28.2       5.496     9.99     5.48     0.29    11.39
+F234             2390.2     -403.4      13.279    24.14    18.61    -4.07    30.21
+F243             1046.3       43.7       5.813    10.57     6.48     0.44    12.39
+Y370             1129.0      -32.8       6.272    11.40     6.61    -0.33    13.18
+Psilocin         1058.3       19.7       5.880    10.69     5.45     0.20    12.00
+
+Pairwise Pearson r (signed deltas):
+            W336    F339    F340    F234
+    W336   1.000   0.175  -0.021  -0.143
+    F339   0.175   1.000  -0.271   0.051
+    F340  -0.021  -0.271   1.000  -0.006
+    F234  -0.143   0.051  -0.006   1.000
+
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/aromatic_signed_rotations.csv
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/aromatic_signed_summary.csv
+CSV saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/aromatic_correlations.csv
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/signed_cumulative_rotations.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/unsigned_vs_signed_cumulative.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/aromatic_correlation_matrix.png
+Plot saved: /Users/zakiralibhai/Documents/VS_Code/amarolab/new-Gq/analysis/phase9_aromatics/aromatic_running_correlation.png
