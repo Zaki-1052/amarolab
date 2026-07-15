@@ -1,0 +1,60 @@
+=== ChainTable ===
+  total_nodes: 901 ✓
+  chain_ids: ['B', 'G', 'A', 'R', 'L'] ✓
+  top hub node 499 -> A:F88 (ras_domain) ✓
+  chain boundaries (B/G, G/A, A/R, R/L) ✓
+  DRY motif (731-733) -> R:D93, R:R94, R:Y95 (TM3, conserved) ✓
+  NPxxY motif (883-887) -> R:N245..R:Y249 (TM7, conserved) ✓
+  toggle switch W6.48 (843) -> R:W205 (TM6, conserved) ✓
+  WISP source R:D76 (714), sink A:F227 (638) ✓
+  top critical edge (624, 739) -> (A, R) interchain ✓
+  chain_node_range B=(1,340), R=(639,900) ✓
+
+=== Structure Verification ===
+  all 901 nodes match average_structure.pdb ✓
+
+=== Parser: node_usage ===
+  901 rows, top node: A:F88 (weight=367604) ✓
+
+=== Parser: hub_nodes (+1 fix) ===
+  18 hubs, top: node=499 -> A:F88 (weight=367604) ✓
+  +1 fix verified: raw 498 -> parsed 499 ✓
+
+=== Parser: edge_usage ===
+  4182 edges (deduped from 8364), top: ('A:T213', 'R:P101') ✓
+
+=== Parser: critical_edges (+1 fix) ===
+  11 critical edges (deduped from 22), top: ('A:T213', 'R:P101') ✓
+  +1 fix verified: raw (623,738) -> parsed (624,739) ✓
+
+=== Filter ===
+  filter_df(condition='gi'): 901 rows (sorted desc) ✓
+  cutoff_df(10%): 90 rows ✓
+  cutoff_df(mean+1*std): 35 rows ✓
+
+=== Run 2 (D155 -> DRY) ===
+  run2 node_usage: 901 rows ✓
+  top 5 nodes:
+         A:F88 (A, ras_domain) weight=367604
+        R:P101 (R, ICL2) weight=266348
+        A:T213 (A, alpha5_helix) weight=265642
+         A:V91 (A, ras_domain) weight=260036
+         R:A97 (R, TM3) weight=257244
+
+=== Top 10 Hub Nodes ===
+    Node         Label  Chain  Domain           Conserved     Usage
+  ──────  ────────────  ─────  ───────────────  ─────────  ────────
+     499         A:F88      A  ras_domain           False    367604
+     739        R:P101      R  ICL2                 False    266348
+     624        A:T213      A  alpha5_helix         False    265642
+     502         A:V91      A  ras_domain           False    260036
+     735         R:A97      R  TM3                  False    257244
+     623        A:V212      A  alpha5_helix         False    236146
+     504         A:A93      A  ras_domain           False    218224
+     731         R:D93      R  TM3                   True    218180
+     117        B:L117      B  beta_propeller       False    191154
+     498         A:C87      A  ras_domain           False    183192
+
+==================================================
+ALL CHECKS PASSED
+==================================================
