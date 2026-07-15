@@ -1,0 +1,124 @@
+#!/bin/bash
+#SBATCH --job-name="wisp_10ns"
+#SBATCH --output="wisp_10ns_%j.%N.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=64
+#SBATCH --mem=128G
+#SBATCH --account=csd940
+#SBATCH --time=03:00:00
+
+source ~/.bashrc
+conda activate biochemcore
+
+export MPLBACKEND=Agg
+
+BASEDIR="/expanse/lustre/projects/csd940/zalibhai/amarolab"
+CORES=32
+
+echo "=== WISP 10ns pipeline: Gi + Gq in parallel ==="
+echo "Start: $(date)"
+echo "Cores per system: $CORES"
+
+# --- Gi 10ns (run1 then run2, sequential) ---
+(
+  set -euo pipefail
+  cd "$BASEDIR/new-Gi/analysis/wisp_10ns"
+
+  echo "[Gi] Run 1: D155 -> Ga a5 helix (F354)"
+  wisp traj_complex.pdb \
+    --source_residues R_ASP_76 \
+    --sink_residues A_PHE_227 \
+    --node_definition RESIDUE_COM \
+    --contact_map_distance_limit 4.5 \
+    --n_paths 10 \
+    --n_cores $CORES \
+    --analyze \
+    --output_dir wisp_run1_d155_to_a5 \
+    2>&1 | tee wisp_run1.log
+
+  echo "[Gi] Run 2: D155 -> DRY motif (R173)"
+  wisp traj_complex.pdb \
+    --source_residues R_ASP_76 \
+    --sink_residues R_ARG_94 \
+    --node_definition RESIDUE_COM \
+    --contact_map_distance_limit 4.5 \
+    --n_paths 10 \
+    --n_cores $CORES \
+    --analyze \
+    --output_dir wisp_run2_d155_to_dry \
+    --wisp_saved_matrix_path wisp_run1_d155_to_a5/functionalized_matrix_with_contact_map_applied.pickle \
+    2>&1 | tee wisp_run2.log
+) &
+GI_PID=$!
+
+# --- Gq (run1 then run2, sequential) ---
+(
+  set -euo pipefail
+  cd "$BASEDIR/new-Gq/analysis"
+
+  echo "[Gq] Run 1: D155 -> Gaq a5 helix (V246)"
+  wisp traj_complex.pdb \
+    --source_residues R_ASP_77 \
+    --sink_residues A_VAL_246 \
+    --node_definition RESIDUE_COM \
+    --contact_map_distance_limit 4.5 \
+    --n_paths 10 \
+    --n_cores $CORES \
+    --analyze \
+    --output_dir wisp_run1_d155_to_a5 \
+    2>&1 | tee wisp_run1.log
+
+  echo "[Gq] Run 2: D155 -> DRY motif (R173)"
+  wisp traj_complex.pdb \
+    --source_residues R_ASP_77 \
+    --sink_residues R_ARG_95 \
+    --node_definition RESIDUE_COM \
+    --contact_map_distance_limit 4.5 \
+    --n_paths 10 \
+    --n_cores $CORES \
+    --analyze \
+    --output_dir wisp_run2_d155_to_dry \
+    --wisp_saved_matrix_path wisp_run1_d155_to_a5/functionalized_matrix_with_contact_map_applied.pickle \
+    2>&1 | tee wisp_run2.log
+) &
+GQ_PID=$!
+
+echo "Gi PID: $GI_PID, Gq PID: $GQ_PID"
+
+wait $GI_PID
+GI_EXIT=$?
+echo "[Gi] finished with exit code $GI_EXIT at $(date)"
+
+wait $GQ_PID
+GQ_EXIT=$?
+echo "[Gq] finished with exit code $GQ_EXIT at $(date)"
+
+# --- Sanity check: verify all --analyze output landed ---
+echo ""
+echo "=== Output verification ==="
+ALL_OK=true
+for d in "$BASEDIR/new-Gi/analysis/wisp_10ns/wisp_run1_d155_to_a5" \
+         "$BASEDIR/new-Gi/analysis/wisp_10ns/wisp_run2_d155_to_dry" \
+         "$BASEDIR/new-Gq/analysis/wisp_run1_d155_to_a5" \
+         "$BASEDIR/new-Gq/analysis/wisp_run2_d155_to_dry"; do
+  for f in node_usage.txt edge_usage.txt hub_nodes.txt critical_edges.txt; do
+    if [ -f "$d/$f" ]; then
+      echo "  OK: $(basename $(dirname $d))/$(basename $d)/$f ($(wc -l < "$d/$f") lines)"
+    else
+      echo "  MISSING: $(basename $(dirname $d))/$(basename $d)/$f"
+      ALL_OK=false
+    fi
+  done
+done
+
+echo ""
+if $ALL_OK; then
+  echo "=== All WISP output present. Ready for pipeline analysis. ==="
+else
+  echo "=== WARNING: Some output files missing. Check logs above. ==="
+fi
+
+echo "=== Done: $(date) ==="
+echo "Gi exit: $GI_EXIT, Gq exit: $GQ_EXIT"
