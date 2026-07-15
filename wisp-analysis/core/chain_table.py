@@ -7,7 +7,7 @@ table built from a YAML config that works for any multi-chain system.
 
 from collections import namedtuple
 
-NodeInfo = namedtuple('NodeInfo', ['chain', 'resid', 'resname', 'domain', 'conserved'])
+NodeInfo = namedtuple('NodeInfo', ['chain', 'resid', 'resname', 'domain', 'conserved', 'lit_resid'])
 
 AA3TO1 = {
     'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C',
@@ -17,6 +17,20 @@ AA3TO1 = {
     'PHE': 'F', 'PRO': 'P', 'SER': 'S', 'THR': 'T', 'TRP': 'W',
     'TYR': 'Y', 'VAL': 'V', 'ASH': 'D', 'GLH': 'E', 'CYX': 'C',
 }
+
+
+def _resolve_lit_offset(literature_offset, resid):
+    """Compute literature resid from a chain's literature_offset config entry."""
+    if literature_offset is None:
+        return None
+    if isinstance(literature_offset, int):
+        return resid + literature_offset
+    if isinstance(literature_offset, list):
+        for entry in literature_offset:
+            seg_start, seg_end = entry['segment']
+            if seg_start <= resid <= seg_end:
+                return resid + entry['offset']
+    return None
 
 
 def _expand_domains(domains_dict):
@@ -66,6 +80,7 @@ class ChainTable:
             start = node
             domain_lookup = _expand_domains(chain.get('domains', {}))
             conserved_set = set(chain.get('conserved_residues', []))
+            lit_offset = chain.get('literature_offset')
 
             for resid in range(1, n + 1):
                 if is_ligand:
@@ -79,6 +94,7 @@ class ChainTable:
                     resname=resname,
                     domain=domain_lookup.get(resid),
                     conserved=resid in conserved_set,
+                    lit_resid=_resolve_lit_offset(lit_offset, resid),
                 )
                 node += 1
 
@@ -119,6 +135,12 @@ class ChainTable:
 
     def node_to_label(self, node):
         info = self._get(node)
+        return f"{info.chain}:{info.resname}{info.resid}"
+
+    def node_to_lit_label(self, node):
+        info = self._get(node)
+        if info.lit_resid is not None:
+            return f"{info.chain}:{info.resname}{info.lit_resid}"
         return f"{info.chain}:{info.resname}{info.resid}"
 
     def edge_chains(self, src, sink):

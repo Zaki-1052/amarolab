@@ -258,12 +258,15 @@ def plot_residue_occurrences(df, chain_table, config, selection_dict,
 
 
 def plot_weight_diff(df, chain_table, config, ref_condition,
-                     chains=None, output_path=None):
+                     chains=None, output_path=None, label_col=None):
     """Plot per-residue weight difference vs a reference condition.
 
-    Requires df containing at least two conditions. Used for Gi vs Gq
-    differential analysis (Phase 4).
+    Requires df containing at least two conditions. When label_col is set
+    (e.g., 'lit_node' for cross-system comparison), uses that column for
+    residue alignment instead of raw node integers.
     """
+    import re
+
     conditions = df['condition'].unique()
     target_conditions = [c for c in conditions if c != ref_condition]
 
@@ -271,13 +274,18 @@ def plot_weight_diff(df, chain_table, config, ref_condition,
         print(f"No conditions to compare against reference '{ref_condition}'")
         return
 
+    if label_col is not None:
+        idx_col = label_col
+    else:
+        idx_col = 'node'
+
     chain_order = _get_chain_order(chain_table, chains)
 
-    ref_df = df[df['condition'] == ref_condition].set_index('node')['normalized_weight']
+    ref_series = df[df['condition'] == ref_condition].set_index(idx_col)['normalized_weight']
 
     for target in target_conditions:
-        target_df = df[df['condition'] == target].set_index('node')['normalized_weight']
-        diff = target_df.subtract(ref_df, fill_value=0)
+        target_series = df[df['condition'] == target].set_index(idx_col)['normalized_weight']
+        diff = target_series.subtract(ref_series, fill_value=0)
 
         n_chains = len(chain_order)
         fig, axes = plt.subplots(n_chains, 1, figsize=(14, 3 * n_chains), sharex=False)
@@ -286,9 +294,18 @@ def plot_weight_diff(df, chain_table, config, ref_condition,
 
         for idx, cid in enumerate(chain_order):
             ax = axes[idx]
-            start, end = chain_table.chain_node_range(cid)
-            chain_diff = diff[(diff.index >= start) & (diff.index <= end)]
-            resids = [chain_table.node_to_resid(n) for n in chain_diff.index]
+
+            if label_col is not None:
+                chain_mask = diff.index.to_series().apply(
+                    lambda lbl: lbl.split(':')[0] == cid
+                )
+                chain_diff = diff[chain_mask.values]
+                resids = [int(re.search(r'\d+', lbl.split(':')[1]).group())
+                          for lbl in chain_diff.index]
+            else:
+                start, end = chain_table.chain_node_range(cid)
+                chain_diff = diff[(diff.index >= start) & (diff.index <= end)]
+                resids = [chain_table.node_to_resid(n) for n in chain_diff.index]
 
             pos_mask = chain_diff >= 0
             ax.bar(resids, chain_diff.where(pos_mask, 0), color='steelblue', alpha=0.7, width=1)
@@ -303,7 +320,8 @@ def plot_weight_diff(df, chain_table, config, ref_condition,
             ax.set_title(f"Chain {cid} ({identity})", fontsize=10, loc='left')
             ax.set_ylabel('Weight Diff')
 
-        axes[-1].set_xlabel('Residue ID (chain-local)')
+        xlabel = 'Literature residue ID' if label_col else 'Residue ID (chain-local)'
+        axes[-1].set_xlabel(xlabel)
         sys_name = config.get('system', {}).get('name', '')
         fig.suptitle(f"{sys_name} — {target} vs {ref_condition}", fontsize=13)
         plt.tight_layout()

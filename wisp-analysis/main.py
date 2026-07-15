@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
+import pandas as pd
 import yaml
 from core.chain_table import ChainTable
 from analysis.single import analyze_run
@@ -63,6 +64,7 @@ def cmd_compare(args):
     ref_condition = ref_run['condition']
 
     filter_chains = args.chains if args.chains else None
+    cross_system = args.ref_config is not None
 
     for usage in ('edge_usage', 'node_usage'):
         target_parser = Parser(target_condition, usage)
@@ -79,23 +81,29 @@ def cmd_compare(args):
             f = Filter()
             target_sorted = f.filter_df(target_df, condition=target_condition)
             ref_sorted = f.filter_df(ref_df, condition=ref_condition)
-            merged = compare_edges(target_sorted, ref_sorted, filter_chains=filter_chains)
+            edge_match = 'lit_edge' if cross_system else None
+            merged = compare_edges(target_sorted, ref_sorted,
+                                   filter_chains=filter_chains,
+                                   match_col=edge_match)
         else:
             f = Filter()
             target_sorted = f.filter_df(target_df, condition=target_condition)
             ref_sorted = f.filter_df(ref_df, condition=ref_condition)
-            merged = compare_nodes(target_sorted, ref_sorted, filter_chains=filter_chains)
+            node_match = 'lit_node' if cross_system else None
+            merged = compare_nodes(target_sorted, ref_sorted,
+                                   filter_chains=filter_chains,
+                                   match_col=node_match)
 
         os.makedirs(args.output, exist_ok=True)
         _save_csv(merged, f'{usage}_diff_{target_condition}_vs_{ref_condition}', args.output)
 
         if usage == 'node_usage':
-            combined = target_df.copy()
-            combined = combined._append(ref_df, ignore_index=True)
+            combined = pd.concat([target_df, ref_df], ignore_index=True)
             fig_dir = os.path.join(args.output, 'figures')
+            label_col = 'lit_node' if cross_system else None
             plot_weight_diff(
                 combined, ct, config, ref_condition=ref_condition,
-                output_path=fig_dir,
+                output_path=fig_dir, label_col=label_col,
             )
 
     print(f"Differential analysis complete. Output in: {args.output}")

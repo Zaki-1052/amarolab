@@ -110,6 +110,10 @@ class Parser:
                 lambda r: (chain_table.node_to_label(r['source']),
                            chain_table.node_to_label(r['sink'])), axis=1
             )
+            df['lit_edge'] = df.apply(
+                lambda r: (chain_table.node_to_lit_label(r['source']),
+                           chain_table.node_to_lit_label(r['sink'])), axis=1
+            )
             df['interdomain'] = df.apply(
                 lambda r: chain_table.is_interdomain(r['source'], r['sink']), axis=1
             )
@@ -133,17 +137,18 @@ class Parser:
                     df['weight_chx'] = np.round(0.2 + (w - w.min()) / denom, decimals=4)
 
                 df = df[['condition', 'chain', 'edge', 'source', 'sink',
-                         'revised_edge', 'interdomain', 'interchain',
+                         'revised_edge', 'lit_edge', 'interdomain', 'interchain',
                          'conserved_edge', 'weight', 'normalized_weight', 'weight_chx']]
             else:
                 df = df[['condition', 'chain', 'edge', 'source', 'sink',
-                         'revised_edge', 'interdomain', 'interchain',
+                         'revised_edge', 'lit_edge', 'interdomain', 'interchain',
                          'conserved_edge', 'weight']]
 
         elif self.usage in ('node_usage', 'hub_nodes'):
             df['condition'] = self.condition
             df['node'] = df['node'].astype(int)
             df['revised_node'] = df['node'].apply(chain_table.node_to_label)
+            df['lit_node'] = df['node'].apply(chain_table.node_to_lit_label)
             df['domain'] = df['node'].apply(chain_table.node_to_domain)
             df['chain'] = df['node'].apply(chain_table.node_to_chain)
             df['conserved'] = df['node'].apply(chain_table.is_conserved)
@@ -157,10 +162,10 @@ class Parser:
                 else:
                     df['normalized_weight'] = np.round((w - w.min()) / denom, decimals=4)
 
-                df = df[['condition', 'chain', 'node', 'revised_node',
+                df = df[['condition', 'chain', 'node', 'revised_node', 'lit_node',
                          'domain', 'conserved', 'weight', 'normalized_weight']]
             else:
-                df = df[['condition', 'chain', 'node', 'revised_node',
+                df = df[['condition', 'chain', 'node', 'revised_node', 'lit_node',
                          'domain', 'conserved', 'weight']]
 
         return df

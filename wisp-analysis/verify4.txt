@@ -1,0 +1,63 @@
+============================================================
+Phase 4 Verification
+============================================================
+
+--- 1. Gq ChainTable construction ---
+  PASS: Gq total nodes
+  PASS: Gq chain IDs
+  PASS: Gq chain R range
+  PASS: Gq chain A range
+  PASS: Gq chain B range
+  PASS: Gq chain G range
+  PASS: Gq chain L range
+
+--- 2. Gq landmark residues ---
+  PASS: Gq D155 (R:D77)
+  PASS: Gq R173 DRY (R:R95)
+  PASS: Gq W336 toggle (R:W209)
+  PASS: Gq N376 NPxxY (R:N249)
+  PASS: Gq V246 a5 tip
+  PASS: Gq psilocin
+
+--- 3. Literature numbering ---
+  PASS: lit_label D155 Gi==Gq
+  PASS: lit_label R173 Gi==Gq
+  PASS: lit_label W336 Gi==Gq
+  PASS: lit_label N376 Gi==Gq
+
+--- 4. Gi ChainTable backward compatibility ---
+  PASS: Gi total nodes
+  PASS: Gi D155 label
+  PASS: Gi D155 lit_label
+  PASS: Gi Gg2 lit_label fallback
+
+--- 5. Parser lit columns (Gi run1 data) ---
+  PASS: node_usage has lit_node column
+  PASS: D155 lit_node = R:D155
+  PASS: edge_usage has lit_edge column
+  PASS: edge_usage row count unchanged
+
+--- 6. Same-system differential (regression) ---
+  PASS: Self-compare nodes: 901 rows
+  PASS: Self-compare nodes: all common
+  PASS: Self-compare via lit_node: 901 rows
+  PASS: Self-compare via lit_node: all common
+  PASS: Self-compare edges: 4182 rows
+  PASS: Self-compare edges: all common
+  PASS: Self-compare via lit_edge: 4182 rows
+  PASS: Self-compare via lit_edge: all common
+
+--- 7. Cross-system mock test ---
+  PASS: Cross-system mock: 3 rows
+  PASS: Cross-system mock: all common
+  PASS: Cross-system mock: D155 ratio correct
+  PASS: Cross-system mock: R173 ratio = 1.0
+  PASS: Cross-system edge mock: D155-R173 is common
+  PASS: Cross-system edge mock: D155-T340 is unique
+
+--- 8. Chain filter ---
+  PASS: Chain R filter: all 3 rows kept
+
+============================================================
+Results: 40 passed, 0 failed
+ALL CHECKS PASSED

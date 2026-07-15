@@ -1,0 +1,203 @@
+# wisp-analysis/config/gq_9as8.yaml
+# 5-HT2A receptor bound to psilocin, mini-Gq heterotrimer complex
+# PDB: 9AS8 | Trajectory: 10ns production MD, 100 frames (10ns test)
+# Chain boundary table from PSF segment ordering (PROA-PROC=R, PROD-PROF=A, etc.)
+# PDBFixer offset: -78 (vs -79 for 9LL8 Gi system)
+
+system:
+  name: "5HT2A-Gq"
+  pdb_id: "9AS8"
+  description: "5-HT2A serotonin receptor bound to psilocin, in complex with mini-Gq heterotrimer"
+  total_residues: 922
+
+chains:
+  - id: R
+    identity: "5-HT2A receptor"
+    wisp_start_0idx: 0
+    num_residues: 266
+    sequence: "LLTAVVIILTIAGNILVIMAVSLEKKLQNATNYFLMSLAIADMLLGFLVMPVSMLTILYGYRWPLPSKLCAVWIYLDVLFSTASIMHLCAISLDRYVAIQNPIHHSRFNSRTKAFLKIIAVWTISVGISMPIPVFGLQDDSKVFKEGSCLLADDNFVLIGSFVSFFIPLTIMVITYFLTIKSLQKQSISNEQKACKVLGIVFFLFVVMWCPFFITNIMAVICKESCNEDVIGALLNVFVWIGYLSSAVNPLVYTLFNKTYRSAFSR"
+    # TM boundaries derived from UniProt P28223 (literature) with offsets:
+    #   PROA+PROB residues (current 1-185): literature = current + 78
+    #   PROC residues (current 186-266): literature = current + 127
+    # Cross-validated: DRY (94-96), D3.32 (77), P5.50 (168), W6.48 (209), NPxxY (249-253)
+    # Coverage: 266/266 residues, no gaps, no overlaps (verified programmatically)
+    domains:
+      TM1: [1, 21]
+      ICL1: [22, 30]
+      TM2: [31, 59]
+      ECL1: [60, 71]
+      TM3: [72, 100]
+      ICL2: [101, 111]
+      TM4: [112, 139]
+      ECL2: [140, 159]
+      TM5: [160, 184]
+      ICL3_stub: [185, 191]
+      TM6: [192, 221]
+      ECL3: [222, 231]
+      TM7: [232, 253]
+      H8: [254, 264]
+      C_term: [265, 266]
+    conserved_residues:
+      - 70    # C3.25 (disulfide to C149/ECL2, both in chain R)
+      - 77    # D3.32 (orthosteric anchor, salt bridge to psilocin)
+      - 94    # D3.49 (DRY)
+      - 95    # R3.50 (DRY)
+      - 96    # Y3.51 (DRY)
+      - 149   # C_ECL2 (disulfide partner to C70, both chain R)
+      - 168   # P5.50
+      - 209   # W6.48 (toggle switch)
+      - 249   # N7.49 (NPxxY)
+      - 250   # P7.50 (NPxxY)
+      - 251   # L7.51 (NPxxY)
+      - 252   # V7.52 (NPxxY)
+      - 253   # Y7.53 (NPxxY)
+    literature_offset:
+      - segment: [1, 185]
+        offset: 78
+      - segment: [186, 266]
+        offset: 127
+
+  - id: A
+    identity: "mini-Gaq"
+    wisp_start_0idx: 266
+    num_residues: 246
+    sequence: "MGSTVSAEDKAAAERSKMIDKNLREDGEKARRTLRLLLLGADNSGKSTIVKQMRILHGGSGGSGGTSGIFETKFQVDKVNFHMFDVGGQRDERRKWIQCFNDVTAIIFVVDSSDYNRLQEALNDFKSIWNNRWLRTISVILFLNKQDLLAEKVLAGKSKIEDYFPEFARYTTPEDATPEPGEDPRVTRAKYFIRKEFVDISTASGDGRHICYPHFTCAVDTENARRIFNDCKDIILQMNLREYNLV"
+    domains:
+      ras_domain: [1, 227]
+      alpha5_helix: [228, 246]
+    conserved_residues: []
+    literature_offset: null
+
+  - id: B
+    identity: "Gb1"
+    wisp_start_0idx: 512
+    num_residues: 338
+    sequence: "ELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN"
+    domains:
+      beta_propeller: [1, 338]
+    conserved_residues: []
+    literature_offset: 0
+
+  - id: G
+    identity: "Gg2"
+    wisp_start_0idx: 850
+    num_residues: 71
+    sequence: "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFCAIL"
+    domains:
+      coiled_coil: [1, 71]
+    conserved_residues: []
+    literature_offset: null
+
+  - id: L
+    identity: "psilocin"
+    wisp_start_0idx: 921
+    num_residues: 1
+    is_ligand: true
+    residue_name: "LIG"
+
+conditions:
+  - name: gq
+    label: "Gq complex (9AS8)"
+
+wisp_runs:
+  - name: run1_d155_to_a5
+    source:
+      chain: R
+      resid: 77
+      literature: "D155 (BW 3.32)"
+      description: "Orthosteric anchor, salt bridge to psilocin"
+    sink:
+      chain: A
+      resid: 246
+      literature: "V246 (Gaq a5 helix C-terminal tip)"
+      description: "2.91 A from receptor (heavy-atom minimum), coupling interface"
+    output_dir: "new-Gq/analysis/wisp_run1_d155_to_a5"
+    condition: gq
+
+  - name: run2_d155_to_dry
+    source:
+      chain: R
+      resid: 77
+      literature: "D155 (BW 3.32)"
+    sink:
+      chain: R
+      resid: 95
+      literature: "R173 (BW 3.50, DRY motif central arginine)"
+    output_dir: "new-Gq/analysis/wisp_run2_d155_to_dry"
+    condition: gq
+
+key_residues:
+  orthosteric_anchor:
+    chain: R
+    resid: 77
+    label: "D155 / BW 3.32"
+  dry_motif:
+    chain: R
+    resids: [94, 95, 96]
+    label: "DRY motif (D172-R173-Y174)"
+  npxxy_motif:
+    chain: R
+    resids: [249, 250, 251, 252, 253]
+    label: "NPxxY (N7.49-Y7.53)"
+  toggle_switch:
+    chain: R
+    resid: 209
+    label: "W336 / BW 6.48 (toggle switch)"
+  conserved_disulfide:
+    chain: R
+    resids: [70, 149]
+    label: "C148-C227 disulfide (TM3-ECL2)"
+  alpha5_tip:
+    chain: A
+    resid: 246
+    label: "V246 (Gaq a5 helix tip)"
+  ga_interface:
+    chain: A
+    resids: [228, 231, 232, 233, 235, 236, 237, 239, 240, 241, 242, 243, 244, 245, 246]
+    label: "Gaq a5 helix residues contacting receptor"
+
+binding_pocket:
+  chain: R
+  resids: [45, 49, 74, 77, 78, 81, 82, 85, 128, 151, 156, 157, 158, 159, 160, 161, 164, 165, 209, 212, 213, 216, 235, 239, 243]
+  label: "Residues within 5A of psilocin"
+
+coupling_interface:
+  receptor_side:
+    chain: R
+    resids: [94, 95, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 179, 180, 181, 182, 183, 184, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 253]
+    label: "Receptor residues contacting Gaq a5 (DRY, ICL2, TM5/TM6 ends, NPxxY Y)"
+  gprotein_side:
+    chain: A
+    resids: [228, 231, 232, 233, 235, 236, 237, 239, 240, 241, 242, 243, 244, 245, 246]
+    label: "Gaq a5 helix contacting receptor"
+
+colors:
+  chains:
+    R: "#000080"
+    A: "#FF4500"
+    B: "#87CEFA"
+    G: "#A9A9A9"
+    L: "#FF00FF"
+  domains:
+    TM1: "#000080"
+    TM2: "#0000CD"
+    TM3: "#0000FF"
+    TM4: "#4169E1"
+    TM5: "#4682B4"
+    TM6: "#5F9EA0"
+    TM7: "#708090"
+    H8: "#778899"
+    ICL1: "#B0C4DE"
+    ICL2: "#B0C4DE"
+    ICL3_stub: "#B0C4DE"
+    ECL1: "#87CEEB"
+    ECL2: "#87CEEB"
+    ECL3: "#87CEEB"
+    C_term: "#778899"
+    ras_domain: "#FF4500"
+    alpha5_helix: "#DAA520"
+    beta_propeller: "#87CEFA"
+    coiled_coil: "#A9A9A9"
+  conditions:
+    gi: "#1E90FF"
+    gq: "#FF4500"
