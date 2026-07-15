@@ -1,0 +1,12 @@
+condition,chain,edge,source,sink,revised_edge,interdomain,interchain,conserved_edge,weight
+gi,"('A', 'R')","(624, 739)",624,739,"('A:T213', 'R:P101')",True,True,False,128624
+gi,"('R', 'R')","(735, 739)",735,739,"('R:A97', 'R:P101')",True,False,False,126170
+gi,"('A', 'A')","(499, 502)",499,502,"('A:F88', 'A:V91')",False,False,False,125757
+gi,"('A', 'A')","(504, 623)",504,623,"('A:A93', 'A:V212')",True,False,False,107930
+gi,"('R', 'R')","(731, 735)",731,735,"('R:D93', 'R:A97')",False,False,False,107708
+gi,"('A', 'A')","(502, 504)",502,504,"('A:V91', 'A:A93')",False,False,False,104585
+gi,"('A', 'A')","(623, 624)",623,624,"('A:V212', 'A:T213')",False,False,False,102137
+gi,"('B', 'A')","(117, 499)",117,499,"('B:L117', 'A:F88')",True,True,False,90686
+gi,"('A', 'A')","(498, 499)",498,499,"('A:C87', 'A:F88')",False,False,False,90382
+gi,"('R', 'R')","(727, 731)",727,731,"('R:A89', 'R:D93')",False,False,False,88828
+gi,"('B', 'B')","(117, 146)",117,146,"('B:L117', 'B:L146')",False,False,False,81300

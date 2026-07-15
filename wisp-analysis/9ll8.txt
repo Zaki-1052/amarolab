@@ -1,0 +1,145 @@
+=== Analyzing run1_d155_to_a5 ===
+
+============================================================
+  5HT2A-Gi — Analysis Summary
+============================================================
+
+  Hub Nodes (18 total):
+    Chain B (Gb1): 6 hubs
+            B:L117  weight=  191154
+             B:Y59  weight=  167798
+            B:L146  weight=  167188
+            B:V187  weight=   90814
+            B:S161  weight=   90204
+    Chain A (Gai1): 7 hubs
+             A:F88  weight=  367604
+            A:T213  weight=  265642
+             A:V91  weight=  260036
+            A:V212  weight=  236146
+             A:A93  weight=  218224
+    Chain R (5-HT2A receptor): 5 hubs
+            R:P101  weight=  266348
+             R:A97  weight=  257244
+             R:D93  weight=  218180
+             R:A89  weight=  180548
+             R:H86  weight=  120950
+
+  Edge Density:
+      B-B:  1606 edges
+      R-R:  1213 edges
+      A-A:   940 edges
+      G-G:   192 edges
+      B-G:   113 edges
+      A-B:    61 edges
+      A-R:    40 edges
+      L-R:    16 edges
+      B-R:     1 edges
+
+  Top 10 Interchain Edges:
+              ('A:T213', 'R:P101')  weight=  257248
+               ('B:L117', 'A:F88')  weight=  181372
+                ('B:Y59', 'A:C87')  weight=  157296
+               ('B:T221', 'G:E22')  weight=   38978
+                ('B:K89', 'A:S13')  weight=   21914
+               ('B:M101', 'A:C87')  weight=   21222
+              ('A:L226', 'R:V193')  weight=   16762
+                ('B:R49', 'G:E63')  weight=   14848
+               ('A:C224', 'R:R94')  weight=   13950
+              ('A:L221', 'R:A190')  weight=    9188
+
+  Critical Edges (11):
+              ('A:T213', 'R:P101')  weight=  128624 [interchain]
+               ('R:A97', 'R:P101')  weight=  126170
+                ('A:F88', 'A:V91')  weight=  125757
+               ('A:A93', 'A:V212')  weight=  107930
+                ('R:D93', 'R:A97')  weight=  107708
+
+============================================================
+
+418
+368
+Saved figure to results/gi_9ll8/run1_d155_to_a5/networkx/figures/gi_top10.0_2D-network.png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/top20_residues_per_chain.png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_D155_-_BW_3.32.png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_DRY_motif_(D172-R173-Y174).png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_NPxxY_(N7.49-Y7.53).png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_W336_-_BW_6.48_(toggle_switch).png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_C148-C227_disulfide_(TM3-ECL2).png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_F354_(Ga_a5_helix_tip).png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/occurrences_Ga_a5_helix_residues_contacting_receptor.png
+Saved figure to results/gi_9ll8/run1_d155_to_a5/figures/gi_node_weight_profile.png
+Wrote 877 commands to results/gi_9ll8/run1_d155_to_a5/chimerax/gi-wisp-top10.0-both-lic.cxc
+
+=== Analyzing run2_d155_to_dry ===
+
+============================================================
+  5HT2A-Gi — Analysis Summary
+============================================================
+
+  Hub Nodes (18 total):
+    Chain B (Gb1): 6 hubs
+            B:L117  weight=  191154
+             B:Y59  weight=  167798
+            B:L146  weight=  167188
+            B:V187  weight=   90814
+            B:S161  weight=   90204
+    Chain A (Gai1): 7 hubs
+             A:F88  weight=  367604
+            A:T213  weight=  265642
+             A:V91  weight=  260036
+            A:V212  weight=  236146
+             A:A93  weight=  218224
+    Chain R (5-HT2A receptor): 5 hubs
+            R:P101  weight=  266348
+             R:A97  weight=  257244
+             R:D93  weight=  218180
+             R:A89  weight=  180548
+             R:H86  weight=  120950
+
+  Edge Density:
+      B-B:  1606 edges
+      R-R:  1213 edges
+      A-A:   940 edges
+      G-G:   192 edges
+      B-G:   113 edges
+      A-B:    61 edges
+      A-R:    40 edges
+      L-R:    16 edges
+      B-R:     1 edges
+
+  Top 10 Interchain Edges:
+              ('A:T213', 'R:P101')  weight=  257248
+               ('B:L117', 'A:F88')  weight=  181372
+                ('B:Y59', 'A:C87')  weight=  157296
+               ('B:T221', 'G:E22')  weight=   38978
+                ('B:K89', 'A:S13')  weight=   21914
+               ('B:M101', 'A:C87')  weight=   21222
+              ('A:L226', 'R:V193')  weight=   16762
+                ('B:R49', 'G:E63')  weight=   14848
+               ('A:C224', 'R:R94')  weight=   13950
+              ('A:L221', 'R:A190')  weight=    9188
+
+  Critical Edges (11):
+              ('A:T213', 'R:P101')  weight=  128624 [interchain]
+               ('R:A97', 'R:P101')  weight=  126170
+                ('A:F88', 'A:V91')  weight=  125757
+               ('A:A93', 'A:V212')  weight=  107930
+                ('R:D93', 'R:A97')  weight=  107708
+
+============================================================
+
+418
+368
+Saved figure to results/gi_9ll8/run2_d155_to_dry/networkx/figures/gi_top10.0_2D-network.png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/top20_residues_per_chain.png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_D155_-_BW_3.32.png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_DRY_motif_(D172-R173-Y174).png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_NPxxY_(N7.49-Y7.53).png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_W336_-_BW_6.48_(toggle_switch).png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_C148-C227_disulfide_(TM3-ECL2).png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_F354_(Ga_a5_helix_tip).png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/occurrences_Ga_a5_helix_residues_contacting_receptor.png
+Saved figure to results/gi_9ll8/run2_d155_to_dry/figures/gi_node_weight_profile.png
+Wrote 877 commands to results/gi_9ll8/run2_d155_to_dry/chimerax/gi-wisp-top10.0-both-lic.cxc
+
+All runs complete. Output in: results/gi_9ll8/
