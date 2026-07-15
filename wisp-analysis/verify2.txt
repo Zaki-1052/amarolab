@@ -1,0 +1,46 @@
+Output directory: /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj
+
+=== Colors ===
+  domain_color('TM3') = '#0000FF' ✓
+  chain_color('R') = '#000080' ✓
+  condition_color('gi') = '#1E90FF' ✓
+  node_color(499) = '#1E90FF' (A:F88, ras_domain) ✓
+  node_color(901) = '#FF00FF' (ligand fallback to chain L) ✓
+  domain_color(None) = '#696969' (fallback) ✓
+  weight_colormap([0,50,100]) = ['#0d0887', '#cc4778', '#f0f921'] ✓
+
+=== Networks ===
+418
+368
+Saved figure to /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/networks/networkx/figures/gi_top10_2D-network.png
+  PNG created: /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/networks/networkx/figures/gi_top10_2D-network.png ✓
+  PKL created: /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/networks/networkx/gi-top10-network.pkl ✓
+
+=== Plotting ===
+  sum_weights_by_residue: 901 residues ✓
+Saved figure to /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/plotting/gi_node_weight_profile.png
+  plot_weight_profile: PNG created ✓
+Saved figure to /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/plotting/top20_residues_per_chain.png
+  plot_top_residues: PNG created ✓
+Saved figure to /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/plotting/occurrences_DRY_motif_(D172-R173-Y174).png
+  plot_residue_occurrences (DRY motif): PNG created ✓
+
+=== ChimeraX ===
+  _node_sel(714) = '/R:76' ✓
+  _node_sel(638) = '/A:227' ✓
+  _sel('R', [93,94,95]) = '/R:93,94,95' ✓
+  _node_atom_sel(714) = '/R:76@CA' ✓
+Wrote 868 commands to /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj/chimerax/gi-wisp-top10-both-lic.cxc
+  write_cxc: file created ✓
+  Chain-qualified selections (/R:, /A:) present ✓
+  @CA atom selections present ✓
+  shape cylinder count (418) matches edge count ✓
+  All domain colors referenced in CXC ✓
+  show_key_residues('dry_motif') → /R:93,94,95 ✓
+  show_ligand() → /L: selection present ✓
+
+==================================================
+ALL CHECKS PASSED
+==================================================
+
+Visualization output in: /var/folders/zm/44tg50wd59b1fdmgytj3y17w0000gn/T/wisp_viz_verify_r610f1qj
